@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/logo_vampiro-removebg-preview_resized.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/historia-do-mundo.css">
+    <title>Blood Paradise</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="src/img/logo_vampiro.png" alt="logo vampiro">
+        </div>
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#personagens">Personagens</a>
+                    <div class="dropdown-content">
+                        <a href="#personagem1">Briar Thorne</a>
+                        <a href="#personagem2">Ruby Victoria</a>
+                        <a href="#personagem3">Roy Joubert</a>
+                        <a href="#personagem4">Fenrir </a>
+                        <a href="#personagem5">Dominic</a>
+                    </div>
+                </li>
+                <li><a href="sessoes.html">Sessões</a></li>
+                <li><a href="historia-do-mundo.html">História do mundo</a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#personagens">Personagens</a>
+                    <div class="dropdown-content">
+                        <a href="#personagem1">Briar Thorne</a>
+                        <a href="#personagem2">Ruby Victoria</a>
+                        <a href="#personagem3">Roy Joubert</a>
+                        <a href="#personagem4">Fenrir </a>
+                        <a href="#personagem5">Dominic</a>
+                    </div>
+                </li>
+                <li><a href="sessoes.html">Sessões</a></li>
+                <li><a href="historia-do-mundo.html">História do mundo</a></li>
+            </ul>
+        </nav>
+
+        <button class="nav-responsivo">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+    </header>
+    <article class="timeline">
+        <nav class="timeline__nav">
+            <ul>
+                <li class="active"><span>1939</span></li>
+                <li><span>1970</span></li>
+                <li><span>2000</span></li>
+                <li><span>2010</span></li>
+                <li class="locked"><span>2024</span></li>
+                <li class="locked"><span>2050</span></li>
+            </ul>
+        </nav>
+        <div class="restricted-overlay">
+
+            <img src="src/img/Cadeado-Vermelho.png" alt="Cadeado" class="locked-image">
+            <p class="restricted-message">ÁREA RESTRITA !!!</p>
+        </div>
+        
+        
+        <div class="timeline__section">
+            <div class="column">
+                <div class="img-descricao">
+                    <img src="src/img/top-secret.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <h1>1939</h1>
+                        <h2>A Descoberta 
+                        </h2>
+                    </div>
+                    <div class="description">
+                        <p>No turbilhão da Segunda Guerra Mundial, onde a humanidade testemunhou horrores inimagináveis,
+                            um segredo sombrio e sinistro espreitava nas sombras além dos campos de batalha e dos
+                            destroços das cidades. Era um segredo que os nazistas descobriram em meio aos seus
+                            experimentos macabros: a existência de vampiros.
+                            Nos laboratórios secretos e sinistros do regime de Hitler, cientistas dedicados mergulharam
+                            em estudos obscuros, buscando novas armas para o arsenal nazista. Entre eles, estava o Dr.
+                            Heinrich von Adler, um homem de mente brilhante e coração sombrio, determinado a servir à
+                            causa do Terceiro Reich a qualquer custo.
+
+                            Foi durante uma ...
+                        </p>
+                    </div>
+                    <button class="time-butt" data-popup-id="popup-overlay1">Ver mais</button>
+
+                </div>
+            </div>
+            <!-- Popup -->
+            <div class="popup-overlay" id="popup-overlay1">
+                <img class="img-pop" src="src/img/vamp1.png" alt="">
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <div class="popup-text">
+                        <h2 class="data">1939</h2>
+                        <h1 class="nome">A Descoberta 
+                        </h1>
+                        <p class="resumo-full">No turbilhão da Segunda Guerra Mundial, onde a humanidade testemunhou
+                            horrores inimagináveis, um segredo sombrio e sinistro espreitava nas sombras além dos campos
+                            de batalha e dos destroços das cidades. Era um segredo que os nazistas descobriram em meio
+                            aos seus experimentos macabros: a existência de vampiros.<br><br>
+
+                            Nos laboratórios secretos e sinistros do regime de Hitler, cientistas dedicados mergulharam
+                            em estudos obscuros, buscando novas armas para o arsenal nazista. Entre eles, estava o Dr.
+                            Heinrich von Adler, um homem de mente brilhante e coração sombrio, determinado a servir à
+                            causa do Terceiro Reich a qualquer custo.<br><br>
+
+                            Foi durante uma dessas experiências que os nazistas fizeram uma descoberta que abalou as
+                            fundações da ciência e da moralidade. Em uma cela escura e úmida, eles encontraram uma
+                            criatura que se alimentava do sangue dos vivos, um vampiro antigo e poderoso. Em vez de
+                            recuar em horror, os cientistas nazistas viram uma oportunidade: transformar essa criatura
+                            em uma arma contra seus inimigos.<br><br>
+
+                            Com métodos brutais e tortuosos, eles estudaram a natureza dos vampiros, descobrindo suas
+                            fraquezas e vulnerabilidades. Eles aprenderam que a luz do sol e o fogo eram as armas mais
+                            eficazes contra esses seres das trevas, capazes de destruí-los completamente.<br><br>
+
+                            Os nazistas então começaram a usar esse conhecimento para caçar e eliminar os vampiros que
+                            se escondiam nas sombras da Europa ocupada. Armados com tochas flamejantes e exposição ao
+                            sol, eles caçavam as criaturas noturnas em suas covas e esconderijos, lançando uma guerra
+                            secreta além da guerra já travada nos campos de batalha.<br><br>
+
+                            Mas mesmo enquanto os nazistas se deliciavam com a ideia de ter controle sobre seres tão
+                            antigos e poderosos, os vampiros não eram facilmente subjugados. Alguns, que sobreviveram
+                            aos ataques nazistas, começaram a retaliar, lançando ataques furtivos contra os soldados e
+                            cientistas do Reich, espalhando o terror nas fileiras dos opressores.<br><br>
+
+                            Essa batalha secreta entre nazistas e vampiros se desenrolou nas sombras da Segunda Guerra
+                            Mundial, uma guerra dentro de uma guerra, onde os horrores da humanidade se misturavam com
+                            os horrores da noite. E embora o destino final dos vampiros permaneça envolto em mistério,
+                            suas histórias ecoam nos cantos escuros da história, lembrando-nos de que, mesmo nas horas
+                            mais sombrias, o mal pode se esconder onde menos esperamos encontrá-lo.<br><br>
+
+                            Enquanto os nazistas mergulhavam cada vez mais fundo nas trevas da guerra e da depravação,
+                            um grupo de vampiros da Camarilla, antigos e astutos, viu uma oportunidade única para se
+                            infiltrar nas fileiras do Reich e desestabilizar seu regime maligno de dentro para
+                            fora.<br><br>
+
+                            Esses vampiros, hábeis em manipulação e sigilo, encontraram maneiras de se infiltrar nos
+                            escalões mais altos do governo nazista, utilizando sua imortalidade e poderes sobrenaturais
+                            para encantar e subornar aqueles no poder. Disfarçados como leais seguidores da ideologia
+                            nazista, eles teceram uma teia de influência nas sombras, agindo como conselheiros secretos
+                            e manipuladores dos líderes do Reich.<br><br>
+
+                            Com o tempo, esses vampiros começaram a minar silenciosamente os esforços nazistas,
+                            sabotando operações militares, desviando recursos preciosos e espalhando a desconfiança
+                            entre os altos comandantes. Eles aproveitaram as rivalidades e disputas internas dentro do
+                            regime para semear o caos e a confusão, minando assim a eficácia do exército
+                            nazista.<br><br>
+
+                            Além disso, esses vampiros usaram seus poderes para se infiltrar nos círculos íntimos de
+                            cientistas nazistas, desviando experimentos e sabotando projetos cruciais. Eles manipularam
+                            resultados de pesquisas e induziram erros fatais, impedindo assim que os nazistas
+                            alcançassem pleno domínio sobre os vampiros, enquanto mantinham a ilusão de
+                            colaboração.<br><br>
+
+                            Enquanto a guerra se arrastava e a maré começava a virar contra os nazistas, esses vampiros
+                            da Camarilla intensificaram seus esforços, usando sua influência para alimentar a
+                            insurreição interna e encorajar a deserção entre as fileiras. E, quando finalmente chegou o
+                            momento certo, eles lançaram um golpe final contra seus antigos aliados.<br><br>
+
+                            Em uma série de ataques coordenados e precisos, os vampiros da Camarilla eliminaram os
+                            líderes nazistas mais proeminentes, deixando o Reich em desordem e confusão. Os golpes
+                            finais foram dados em meio à escuridão da noite, quando os vampiros emergiram das sombras
+                            para punir aqueles que ousaram desafiar seu domínio.<br><br>
+
+                            Com o colapso do regime nazista, os vampiros da Camarilla voltaram às sombras, observando
+                            silenciosamente enquanto o mundo se recuperava dos horrores da guerra. Sua intervenção
+                            secreta permaneceu um mistério para a maioria, uma nota de rodapé sombria na história da
+                            Segunda Guerra Mundial, lembrando a todos que, mesmo nos momentos mais sombrios da
+                            humanidade, as criaturas das trevas podem ter um papel a desempenhar.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <div class="img-descricao">
+                        <img src="src/img/top-secret.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h1>1970</h1>
+                        <h2>O inicio da segunda inquisição
+                        </h2>
+                    </div>
+                    <div class="description">
+                        <p> Em meados de 1972, enquanto os Estados Unidos mergulhavam em meio às complexidades da Guerra
+                            Fria e tentavam desvendar os segredos sombrios do passado nazista, uma descoberta
+                            extraordinária foi feita nos confins dos arquivos militares: documentos que expunham os
+                            estudos nazistas sobre vampiros.
+                        </p>
+                    </div>
+                    <button class="time-butt" data-popup-id="popup-overlay2">Ver mais</button>
+                </div>
+            </div>
+            <!-- Popup -->
+            <div class="popup-overlay" id="popup-overlay2">
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <div class="popup-text">
+                        <h2 class="data">1970</h2>
+                        <h1 class="nome">O inicio da segunda inquisição
+                        </h1>
+                        <p class="resumo-full">Em meados de 1972, enquanto os Estados Unidos mergulhavam em meio às
+                            complexidades da Guerra Fria e tentavam desvendar os segredos sombrios do passado nazista,
+                            uma descoberta extraordinária foi feita nos confins dos arquivos militares: documentos que
+                            expunham os estudos nazistas sobre vampiros.<br><br>
+
+                            Esses documentos, recuperados de instalações nazistas antigas, lançaram uma luz sinistra
+                            sobre os experimentos obscuros realizados durante a Segunda Guerra Mundial. Revelaram a
+                            busca desesperada dos nazistas pelo controle sobre seres das trevas, seus métodos brutais de
+                            captura e estudo, e suas tentativas de encontrar maneiras de neutralizar os vampiros,
+                            incluindo a pesquisa sobre a luz do sol e o fogo como armas eficazes.<br><br>
+
+                            No entanto, ao invés de divulgar essa descoberta ao público, os Estados Unidos optaram por
+                            manter esses achados em segredo absoluto. Os documentos foram transferidos para instalações
+                            altamente classificadas, como a Área 51 e o Pentágono, onde apenas um seleto grupo de
+                            autoridades militares e cientistas de confiança tinha acesso.<br><br>
+
+                            O governo dos Estados Unidos reconheceu a importância desses achados e os considerou
+                            extremamente sensíveis. Eles temiam que a divulgação pública da existência de vampiros
+                            pudesse gerar pânico generalizado e instabilidade social. Além disso, havia preocupações
+                            sobre o potencial de os inimigos dos Estados Unidos tentarem explorar essas informações para
+                            seus próprios propósitos.<br><br>
+
+                            Assim, os documentos permaneceram guardados a sete chaves, enquanto uma equipe especializada
+                            de cientistas e pesquisadores foi montada para estudar e analisar seu conteúdo. Eles
+                            trabalharam em segredo, explorando as implicações dessas descobertas e investigando se havia
+                            alguma ameaça iminente que os vampiros pudessem representar para a segurança
+                            nacional.<br><br>
+
+                            Enquanto isso, o governo dos Estados Unidos continuou a monitorar de perto qualquer
+                            atividade suspeita relacionada a vampiros, implantando agentes em todo o mundo para
+                            investigar relatos de encontros com essas criaturas lendárias. No entanto, essas informações
+                            permaneceram dentro dos círculos mais altos de segurança, longe dos olhos do público em
+                            geral.
+                            <br><br>
+                            Assim, a existência de vampiros se tornou mais um segredo sombrio guardado nos confins do
+                            governo dos Estados Unidos, uma verdade obscura que apenas alguns poucos privilegiados
+                            tinham conhecimento. Enquanto o mundo seguia seu curso, os segredos dos documentos nazistas
+                            permaneciam escondidos nas sombras da história, esperando serem descobertos por aqueles com
+                            acesso aos corredores do poder.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-descricao">
+                    <img src="src/img/top-secret.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <h1>2000</h1>
+                        <h2>A queda da Rússia
+                        </h2>
+                    </div>
+                    <div class="description">
+                        <p>Nos primeiros anos do século XXI, quando o mundo ainda estava se adaptando à chocante
+                            revelação da existência dos vampiros, a Segunda Inquisição, uma força-tarefa global dedicada
+                            à erradicação dessas criaturas sobrenaturais, se tornou cada vez mais ativa e implacável em
+                            sua busca por purgar a humanidade da presença vampírica.
+                        </p>
+
+                    </div>
+                    <button class="time-butt" data-popup-id="popup-overlay3">Ver mais</button>
+                </div>
+            </div>
+            <!-- Popup -->
+            <div class="popup-overlay" id="popup-overlay3">
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <div class="popup-text">
+                        <h2 class="data">2000</h2>
+                        <h1 class="nome">A queda da Rússia
+
+                        </h1>
+                        <p class="resumo-full">Nos primeiros anos do século XXI, quando o mundo ainda estava se
+                            adaptando à chocante revelação da existência dos vampiros, a Segunda Inquisição, uma
+                            força-tarefa global dedicada à erradicação dessas criaturas sobrenaturais, se tornou cada
+                            vez mais ativa e implacável em sua busca por purgar a humanidade da presença
+                            vampírica.<br><br>
+
+                            Em 2003, rumores começaram a circular nos círculos mais sombrios da Rússia sobre
+                            avistamentos inexplicáveis e desaparecimentos misteriosos. As autoridades locais
+                            inicialmente descartaram esses relatos como meras superstições, mas quando a Segunda
+                            Inquisição recebeu informações concretas sobre a presença de uma colônia de vampiros na
+                            região, eles agiram sem hesitação.<br><br>
+
+                            No início de 2004, uma operação secreta foi lançada na região russa, com agentes da Segunda
+                            Inquisição invadindo esconderijos e covis de vampiros, determinados a erradicar a ameaça de
+                            uma vez por todas. Equipados com tecnologia avançada e treinamento especializado, esses
+                            agentes não mostravam piedade enquanto vasculhavam cada canto escuro em busca dos
+                            não-vivos.<br><br>
+
+                            O conflito foi sangrento e brutal, com os vampiros resistindo ferozmente à invasão dos
+                            caçadores humanos. No entanto, a determinação e a eficiência da Segunda Inquisição
+                            prevaleceram. Utilizando armas especialmente projetadas para combater os seres
+                            sobrenaturais, eles caçaram e eliminaram os vampiros um a um, sem deixar nenhum
+                            escapar.<br><br>
+
+                            À medida que o sol se erguia sobre os escombros das batalhas noturnas, a região estava
+                            finalmente livre da ameaça vampírica. No entanto, o preço da vitória foi alto, com inúmeros
+                            agentes da Segunda Inquisição sacrificando suas vidas no cumprimento de sua missão
+                            sagrada.<br><br>
+
+                            A operação na Rússia foi um marco na história da Segunda Inquisição, demonstrando sua
+                            determinação em enfrentar e destruir a ameaça dos vampiros onde quer que ela surgisse. No
+                            entanto, as sombras do medo e da incerteza continuaram a pairar sobre a região, deixando uma
+                            cicatriz indelével na memória daqueles que testemunharam a batalha entre humanos e
+                            não-vivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-descricao">
+                    <img src="src/img/top-secret.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <h1>2010</h1>
+                        <h2>O Novo Governo 
+                        </h2>
+                    </div>
+                    <div class="description">
+                        <p>Após décadas de conflitos e rivalidades entre as potências vampíricas do Sabá, Camarilla e
+                            Anarquia, uma mudança surpreendente ocorreu no equilíbrio de poder em 2010. Os líderes
+                            desses grupos, cientes dos perigos crescentes representados pela Segunda Inquisição e das
+                            consequências devastadoras do ataque na Rússia em 2004, decidiram deixar de lado suas
+                            diferenças antigas e unir forças em uma aliança incomum.
+                        </p>
+                    </div>
+                    <button class="time-butt" data-popup-id="popup-overlay4">Ver mais</button>
+                </div>
+            </div>
+            <!-- Popup -->
+            <div class="popup-overlay" id="popup-overlay4">
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <div class="popup-text">
+                        <h2 class="data">2010</h2>
+                        <h1 class="nome">O Novo Governo 
+
+                        </h1>
+                        <p class="resumo-full">Após décadas de conflitos e rivalidades entre as potências vampíricas do
+                            Sabá, Camarilla e Anarquia, uma mudança surpreendente ocorreu no equilíbrio de poder em
+                            2010. Os líderes desses grupos, cientes dos perigos crescentes representados pela Segunda
+                            Inquisição e das consequências devastadoras do ataque na Rússia em 2004, decidiram deixar de
+                            lado suas diferenças antigas e unir forças em uma aliança incomum.<br><br>
+
+                            Os antigos barões e príncipes, uma vez envoltos em lutas pelo controle absoluto,
+                            reconheceram a necessidade de solidariedade diante da ameaça iminente dos caçadores humanos.
+                            Sob a sombra da Segunda Inquisição, eles compreenderam que a sobrevivência de seu povo
+                            dependia da cooperação mútua e da formação de uma frente unida contra o inimigo
+                            comum.<br><br>
+
+                            Assim, uma reunião histórica foi convocada, na qual os líderes do Sabá, Camarilla e Anarquia
+                            se encontraram para discutir os termos de uma aliança. Apesar das tensões iniciais e das
+                            diferenças ideológicas profundas, um acordo foi alcançado: eles concordaram em compartilhar
+                            informações, recursos e estratégias para garantir a segurança de sua espécie.<br><br>
+
+                            As antigas coteries deram lugar a um novo modelo de governança, com os líderes vampíricos
+                            estabelecendo "Comensais Locais" em cada cidade, onde vampiros de diferentes afiliações
+                            poderiam se reunir para discutir questões de segurança e tomar decisões coletivas. Os grupos
+                            de mercenários e clãs foram reorganizados para servir a esse propósito comum, protegendo e
+                            defendendo suas respectivas regiões.<br><br>
+
+                            Embora muitos vampiros tenham resistido a essa nova ordem e algumas rebeliões tenham
+                            surgido, elas foram rapidamente suprimidas pela força combinada das potências estabelecidas.
+                            A incerteza persistiu entre os vampiros em relação aos verdadeiros motivos por trás dessa
+                            aliança improvável, mas a necessidade de sobrevivência superou qualquer desconfiança.
+                            <br><br>
+                            Enquanto isso, nos mais altos escalões do poder vampírico, planos secretos começaram a se
+                            desenrolar. Com a Segunda Inquisição ainda representando uma ameaça iminente, os líderes
+                            vampíricos começaram a considerar se era hora de lançar um ataque preventivo contra os
+                            humanos, a fim de garantir a supremacia de sua espécie sobre a Terra. Essa decisão crucial
+                            permaneceria envolta em mistério, enquanto os vampiros se preparavam para um novo capítulo
+                            incerto em sua história milenar.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+            
+                <div class="content">
+                    <div class="title">
+                        <h1>2024</h1>
+                        <h2>O Despertar
+                        </h2>
+                    </div>
+                    <div class="description">
+                        <p>No turbilhão dos anos 2023 e 2024, enquanto o mundo ainda se recuperava dos choques causados
+                            pelas alianças e tréguas inesperadas entre os vampiros, um acontecimento ainda mais
+                            surpreendente estava prestes a mudar o curso da história.</p>
+
+                    </div>
+                    <button class="time-butt" data-popup-id="popup-overlay5">Ver mais</button>
+                </div>
+            </div>
+            <!-- Popup -->
+            <div class="popup-overlay" id="popup-overlay5">
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <div class="popup-text">
+                        <h2 class="data">2024</h2>
+                        <h1 class="nome">O Despertar
+                        </h1>
+                        <p class="resumo-full">No turbilhão dos anos 2023 e 2024, enquanto o mundo ainda se recuperava
+                            dos choques causados pelas alianças e tréguas inesperadas entre os vampiros, um
+                            acontecimento ainda mais surpreendente estava prestes a mudar o curso da história.<br><br>
+
+                            Um grupo de vampiros, enviados em uma missão de exploração por um remetente misterioso,
+                            inadvertidamente despertou uma antiga ancila, uma vampira que remontava aos tempos da
+                            Cleópatra. Confrontada com a realidade do mundo moderno e o destino que ele havia tomado
+                            desde o seu sono milenar, a ancila viu uma oportunidade de reivindicar seu lugar no mundo
+                            vampírico e mudar o curso da história.<br><br>
+
+                            Ao ver a dominação das potências vampíricas e a fragilidade do novo governo humano, a ancila
+                            antiga decidiu agir. Com sua sabedoria e poderes acumulados ao longo dos séculos, ela
+                            começou a urdir um plano meticuloso para subverter o status quo e trazer o mundo sob o
+                            domínio dos vampiros de uma vez por todas.<br><br>
+
+                            Primeiro, ela lançou uma série de intrigas e conspirações, semear o caos entre os governos
+                            humanos e vampíricos, criando divisões e suspeitas que distraíram suas atenções e
+                            recursos.<br><br>
+
+                            Enquanto isso, nos bastidores, a ancila antiga começou a reunir aliados improváveis. Ela
+                            estendeu sua influência para grupos como os Anonymous, habilidosos em manipulação e
+                            desinformação, e a máfia japonesa, especialistas em operações clandestinas e
+                            subversão.<br><br>
+
+                            Juntos, eles traçaram um plano audacioso: mergulhar o mundo na escuridão eterna, abolindo o
+                            ciclo natural do dia e da noite. Usando tecnologia avançada e rituais antigos, eles
+                            manipularam os sistemas climáticos globais, cobrindo o céu com nuvens densas e bloqueando a
+                            luz do sol.<br><br>
+
+                            O mundo mergulhou na escuridão, com o sol desaparecendo atrás de uma névoa sombria e
+                            interminável. Enquanto os humanos lutavam para sobreviver em meio ao caos e à confusão, os
+                            vampiros emergiram das sombras, reinando sobre um mundo envolto em trevas.<br><br>
+
+                            A ancila antiga finalmente alcançou seu objetivo, trazendo a noite eterna e estabelecendo o
+                            domínio dos vampiros sobre a Terra. Sob seu comando, os vampiros não precisavam mais se
+                            esconder nas sombras, pois agora governavam abertamente sobre os humanos, erguendo-se como
+                            os senhores supremos de um mundo mergulhado na escuridão eterna.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                
+                <div class="content">
+                    <div class="title">
+                        <h1>2050</h1>
+                        <h2>A Resistência Contra o Domínio das Trevas</h2>
+                    </div>
+                    <div class="description">
+                        <p>Após décadas de trevas envolvendo o mundo em uma escuridão interminável, os vampiros e os
+                            humanos remanescentes viviam em um estado de desespero e desolação. Com os recursos escassos
+                            e a população humana diminuindo a cada dia, um pequeno grupo de vampiros e humanos decidiu
+                            se unir em uma resistência contra o domínio das treva</p>
+
+                    </div>
+                    <button class="time-butt" data-popup-id="popup-overlay6">Ver mais</button>
+                </div>
+            </div>
+            <!-- Popup -->
+            <div class="popup-overlay" id="popup-overlay6">
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <div class="popup-text">
+                        <h2 class="data">2050</h2>
+                        <h1 class="nome">A Resistência Contra o Domínio das Trevas</h1>
+                        <p class="resumo-full">Após décadas de trevas envolvendo o mundo em uma escuridão interminável,
+                            os vampiros e os humanos remanescentes viviam em um estado de desespero e desolação. Com os
+                            recursos escassos e a população humana diminuindo a cada dia, um pequeno grupo de vampiros e
+                            humanos decidiu se unir em uma resistência contra o domínio das trevas.<br><br>
+
+                            Guiados por uma visão de restaurar o equilíbrio do mundo e devolver a luz do dia aos seus
+                            habitantes, os membros da resistência bolaram um plano audacioso. Eles sabiam que a
+                            tecnologia e a magia que mantinham o mundo em trevas eram controladas por uma elite poderosa
+                            de vampiros, que se beneficiavam do domínio permanente da noite.<br><br>
+
+                            Primeiro, eles infiltraram-se nas fileiras dos vampiros mais poderosos, ganhando sua
+                            confiança e acessando informações privilegiadas sobre os sistemas de controle das trevas. Em
+                            seguida, começaram a sabotar discretamente esses sistemas, minando sua eficácia e preparando
+                            o terreno para um golpe final.<br><br>
+
+                            Enquanto isso, os membros humanos da resistência trabalhavam nos bastidores, reunindo
+                            conhecimento antigo sobre magia e tecnologia perdida, procurando por uma maneira de reverter
+                            o feitiço que mantinha o mundo na escuridão eterna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </article>
+
+
+    <script src="./src/js/script.js"></script>
+
+
+</body>
+
+</html>

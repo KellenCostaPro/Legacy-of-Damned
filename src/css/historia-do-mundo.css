@@ -1,0 +1,302 @@
+/* Definindo o modelo de caixa para todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para o HTML e o corpo da página */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    background-image: url(../img/historia.png);
+    background-size: cover; 
+    background-position: center; 
+}
+
+/* Estilos para a seção 'historia' */
+.historia {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Wrapper principal */
+.wrapper {
+    margin: 0 auto;
+    padding: 0 16.66% 50px;
+    /* Padding inferior para dar espaço ao conteúdo abaixo */
+    width: 100%;
+}
+
+/* Estilos para o elemento 'article' */
+article {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
+}
+
+/* Estilos para a navegação da linha do tempo */
+.timeline__nav {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    transition: top .3s ease-out;
+}
+
+/* Estilos para a lista não ordenada dentro da navegação */
+.timeline__nav ul {
+    list-style: none;
+    margin: 250px 0;
+    /* Espaço superior para evitar sobreposição com o conteúdo */
+}
+
+/* Estilos para cada item da lista na navegação */
+.timeline__nav ul li {
+    margin: 15px 0;
+    padding-left: 0;
+    color: #abab;
+    border-bottom: 1px solid #800;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+/* Estilos para o item ativo na navegação */
+.timeline__nav ul li.active {
+    font-weight: bold;
+    color: #800;
+    border-bottom: 1px dotted transparent;
+    transform: scale(1.2);
+}
+
+/* Estilos ao passar o mouse sobre um item da lista */
+.timeline__nav ul li:hover {
+    color: #800;
+}
+
+/* Estilos para as colunas que contêm o conteúdo */
+.column {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para o conteúdo dentro de cada coluna */
+.content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para a linha do tempo */
+.timeline {
+    width: 100%;
+    margin-left: 5%;
+    /* Margem à esquerda para evitar sobreposição com a navegação */
+    margin-top: 10%;
+    /* Margem superior */
+}
+
+/* Estilos para cada coluna dentro da linha do tempo */
+.timeline .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o título dentro de cada coluna */
+.timeline .column .title {
+    position: relative;
+    text-align: center;
+}
+
+/* Estilos para o título h1 */
+.timeline .column .title h1 {
+    font-size: 100px;
+    color: rgba(122, 128, 131, 0.1);
+    font-family: serif;
+}
+
+/* Estilos para o título h2 */
+.timeline .column .title h2 {
+    font-size: 33px;
+    color: #800;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+}
+
+/* Estilos para a descrição dentro de cada coluna */
+.timeline .column .description {
+    color: #f4eded;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    border-left: 1px solid #c4b9bf;
+    /* Adiciona uma borda à esquerda */
+    padding: 15px;
+    /* Espaçamento interno */
+}
+
+/* Estilos para a imagem e sua descrição */
+.img-descricao {
+    
+    position: absolute;
+    left: 105vh;
+    /* Posicionamento inicial */
+    margin-top: 20vh;
+    transform: rotate(15deg);
+    /* Rotação */
+    border-right: 50%;
+}
+
+/* Estilos para a imagem dentro de .img-descricao */
+.img-descricao img {
+    width: 550px;
+}
+/* Estilos da barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #070707; /* Cor do indicador da barra de rolagem */
+    border-radius: 15px; /* Raio da borda do indicador */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c90a0a; /* Cor do indicador da barra de rolagem ao passar o mouse */
+}
+
+/* Estilos para o pop-up overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+/* Estilos para o conteúdo do pop-up */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Estilos para o resumo dentro do pop-up */
+.resumo-full {
+    padding: 15px;
+    color: #f4eded;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    
+}
+
+/* Estilos para o botão de fechar o pop-up */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #f40707;
+}
+
+/* Estilos para o texto dentro do pop-up */
+.popup-text {
+    margin: 0px;
+    background-color: #131212;
+    max-height: 400px; 
+    overflow-y: auto; 
+}
+.nome {
+    text-align: center;
+    font-size: 25px;
+    color: #800;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.data{
+    color: #eec9dd;
+    opacity: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+/* Estilos para o botão de tempo */
+.time-butt {
+    width: 100px;
+}
+
+
+/* Estilos para o item de data bloqueada */
+.timeline__nav ul li.locked::before {
+    content: "\1F512"; /* Cadeado Unicode */
+    margin-right: 5px;
+}
+
+/* Estilo para desabilitar o cursor nos itens bloqueados */
+.timeline__nav ul li.locked {
+    cursor: not-allowed;
+}
+/* Estilos para a camada de sobreposição da área restrita */
+.restricted-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Estilos para a imagem do cadeado */
+.locked-image {
+    width: 450px; /* Ajuste conforme necessário */
+}
+
+/* Estilos para a mensagem de área restrita */
+.restricted-message {
+    position: absolute;
+    color: rgb(250, 250, 250);
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 65vh;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    10%, 90% { transform: translate(-10px, 0); }
+    20%, 80% { transform: translate(10px, 0); }
+    30%, 50%, 70% { transform: translate(-10px, 0); }
+    40%, 60% { transform: translate(10px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+.shake-animation {
+    animation: shake 0.5s ease;
+}
+
+.img-pop{
+    margin: 30px;
+}

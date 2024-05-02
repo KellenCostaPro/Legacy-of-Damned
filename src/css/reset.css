@@ -1,0 +1,48 @@
+/* Reset CSS */
+
+/* Remove margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define uma borda de caixa uniforme em todos os elementos */
+html {
+    font-size: 62.5%;
+    /* Define 1rem como 10px */
+}
+
+body {
+    font-size: 1.6rem;
+    /* Define o tamanho base da fonte como 16px */
+    font-family: Arial, sans-serif;
+    /* Define uma fonte genérica */
+    line-height: 1.5;
+    /* Define o espaçamento entre as linhas */
+}
+
+/* Remove a decoração de link padrão */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove a lista de estilos */
+ul, ol {
+    list-style: none;
+}
+
+/* Remova a aparência padrão do botão */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Defina imagens para dimensionar corretamente */
+img {
+    max-width: 100%;
+    height: auto;
+}
+

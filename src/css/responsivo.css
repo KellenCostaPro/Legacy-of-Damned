@@ -1,0 +1,336 @@
+
+/* MENU RESPONSIVO*/
+@media only screen and (max-width: 767px) {
+    .hamburger {
+        display: block; 
+        cursor: pointer; 
+    }
+    nav {
+        display: none; 
+    }
+    .dropdown-content {
+        display: none; 
+    }
+    .hamburger.active .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin: 30% ;
+    }
+    .main-nav li {
+        margin: 10px 0; 
+    }
+}
+
+
+/* HOME RESPONSIVO */
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .conteudo-home {
+        width: 80%; 
+        max-width: 800px; 
+        height: auto; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+    }
+
+    .nome-rpg {
+        font-size: 3.5vw; 
+        margin-bottom: 2vh;
+    }
+
+    .historia-rpg {
+        font-size: 1.5vw; 
+    }
+
+}
+/* HOME MOBILE */
+@media screen and (max-width: 768px) {
+
+    .conteudo-home {
+        width: 95%; 
+        padding: 0px; 
+        top: 45vh;
+    }
+
+    .nome-rpg {
+        font-size: 7vw; 
+        margin-bottom: 10px; 
+    }
+
+    .historia-rpg {
+        font-size: 12px; 
+        
+    }    
+}
+/* perssonagm RESPONSIVO */
+
+
+@media screen and (max-width: 600px) {
+    #personagem1,
+    #personagem2,
+    #personagem3,
+    #personagem4,
+    #personagem5 {
+        width: 100%; /* Define a largura para ocupar toda a largura do contêiner pai */
+        margin-bottom: 20px; /* Adiciona espaçamento entre os personagens */
+    }
+    #personagem1 {
+        background-image: url(../img/roy.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #personagem2 {
+        background-image: url(../img/Ruby.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem3 {
+        background-image: url(../img/roy.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem4 {
+        background-image: url(../img/Fenrir.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem5 {
+        background-image: url(../img/Dominic.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    
+    .img-perssonagem-responsivo{
+        display: none;
+        
+    }
+    .icon-perssonagem{
+        display: flex;
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 70%;
+        left: 20%;
+        filter: drop-shadow(rgba(231, 161, 197, 0.8)0px 5px 15px);
+        cursor: pointer;
+        
+    }
+    .icon-clan{
+        display: flex;
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 70%;
+        left: 45%;
+        filter: drop-shadow(rgba(231, 161, 197, 0.8)0px 5px 15px);
+        cursor: pointer;
+    }
+
+    .conteudo {
+        background: rgba(13, 13, 13, 0.5);
+        width: 60%; 
+        left: 20%;
+        top: 15vh;
+        padding: 7px;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .nome-personagem {
+        font-size: 5vh; 
+        margin-bottom: 1vh; 
+    }
+
+    .historia {
+        font-size: 1.6vh; 
+    }
+
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    #personagem1,
+    #personagem2,
+    #personagem3,
+    #personagem4,
+    #personagem5 {
+        width: 100%; /* Define a largura para ocupar toda a largura do contêiner pai */
+        margin-bottom: 20px; /* Adiciona espaçamento entre os personagens */
+    }
+    #personagem1 {
+        background-image: url(../img/Ruby.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #personagem2 {
+        background-image: url(../img/Ruby.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem3 {
+        background-image: url(../img/roy.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem4 {
+        background-image: url(../img/Fenrir.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem5 {
+        background-image: url(../img/Dominic.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .img-perssonagem-responsivo{
+        display: none;
+        
+    }
+    .icon-perssonagem{
+        display: flex;
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 70%;
+        left: 20%;
+        filter: drop-shadow(rgba(231, 161, 197, 0.8)0px 5px 15px);
+        cursor: pointer;
+        
+    }
+    .icon-clan{
+        display: flex;
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 70%;
+        left: 45%;
+        filter: drop-shadow(rgba(231, 161, 197, 0.8)0px 5px 15px);
+        cursor: pointer;
+    }
+
+    .conteudo {
+        background: rgba(13, 13, 13, 0.5);
+        width: 60%; 
+        left: 20%;
+        top: 15vh;
+        padding: 7px;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .nome-personagem {
+        font-size: 5vh; 
+        margin-bottom: 1vh; 
+    }
+
+    .historia {
+        font-size: 1.6vh; 
+    }
+
+
+    
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    #personagem1,
+    #personagem2,
+    #personagem3,
+    #personagem4,
+    #personagem5 {
+        width: 100%; /* Define a largura para ocupar toda a largura do contêiner pai */
+        margin-bottom: 20px; /* Adiciona espaçamento entre os personagens */
+    }
+    #personagem1 {
+        background-image: url(../img/Fenrir.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    
+    #personagem2 {
+        background-image: url(../img/Ruby.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem3 {
+        background-image: url(../img/roy.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem4 {
+        background-image: url(../img/Fenrir.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #personagem5 {
+        background-image: url(../img/Dominic.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img-perssonagem-responsivo{
+        display: flex;
+        position: absolute;
+        width: 75%;
+        height:auto;
+        left: 80vh;
+        top: 30vh;
+        filter: drop-shadow( rgba(231, 161, 197, 0.8)0px 5px 15px);
+        z-index: -1;
+    }
+
+    .conteudo {
+        background: rgba(13, 13, 13, 0.5);
+        width: 60%; 
+        left: 5%;
+        top: 25vh;
+        padding: 7px;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .nome-personagem {
+        font-size: 7vh; 
+        margin-bottom: 1vh; 
+    }
+
+    .historia {
+        font-size: 2vh; 
+    }
+
+
+}
