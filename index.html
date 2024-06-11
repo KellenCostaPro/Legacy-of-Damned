@@ -1,150 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/src/img/logo_vampiro-removebg-preview_resized.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alegreya&family=Cinzel&family=Crimson+Text&family=Lora&family=Playfair+Display&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./fontes/ReedMedium/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/responsivo.css">
-    <title>Blood Paradise</title>
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Document</title>
+
 </head>
 
 <body>
-    
-    <header class="cabecalho">
-        <div class="logo">
-            <img src="src/img/logo_vampiro.png" alt="logo vampiro">
+    <header class="header">
+        <div class="header__logo">
+            <a href="#home"><img src="src/img/logo_vampiro.png" alt="logo vampiro"></a>
         </div>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#personagens">Personagens</a>
-                    <div class="dropdown-content">
-                        <a href="#personagem1">Briar Thorne</a>
-                        <a href="#personagem2">Ruby Victoria</a>
-                        <a href="#personagem3">Roy Joubert</a>
-                        <a href="#personagem4">Fenrir</a>
-                        <a href="#personagem5">Dominic</a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item header__nav-item--dropdown">
+                    <a href="#personagens" class="header__nav-link">Personagens</a>
+                    <div class="header__dropdown-content">
+                        <a href="#personagem1" class="header__dropdown-link">Briar Thorne</a>
+                        <a href="#personagem2" class="header__dropdown-link">Ruby Victoria</a>
+                        <a href="#personagem3" class="header__dropdown-link">Roy Joubert</a>
+                        <a href="#personagem4" class="header__dropdown-link">Fenrir</a>
+                        <a href="#personagem5" class="header__dropdown-link">Dominic</a>
                     </div>
                 </li>
-                <li><a href="sessoes.html">Sessões</a></li>
-                <li><a href="historia-do-mundo.html">História do mundo</a></li>
+                <li class="header__nav-item"><a href="sessoes.html" class="header__nav-link">Sessões</a></li>
+                <li class="header__nav-item"><a href="historia-do-mundo.html" class="header__nav-link">História do
+                        mundo</a></li>
             </ul>
         </nav>
-        
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+
+        <div class="header__hamburger">
+            <div class="header__hamburger-line"></div>
+            <div class="header__hamburger-line"></div>
+            <div class="header__hamburger-line"></div>
         </div>
     </header>
-    <main class="home hidden" id="home">
-        <div class="conteudo-home">
-            <h1 class="nome-rpg">Vampiro a Máscara </h1>
-            <p class="historia-rpg"> Bem-vindo à mesa de RPG "Legacy of the Damned".<br><br>
-                Em um mundo sombrio e tumultuado
-                do século XXI, os jogadores são transportados para uma realidade onde os vampiros não são apenas figuras
-                lendárias, mas sim governantes supremos de uma Terra envolta na noite eterna.<br><br>
-        
+
+    <main class="home home--hidden" id="home">
+        <div class="home__content">
+            <h1 class="home__title">Vampiro a Máscara</h1>
+            <p class="home__story">Bem-vindo à mesa de RPG "Legacy of the Damned".<br><br>
+                Em um mundo sombrio e tumultuado do século XXI, os jogadores são transportados para uma realidade onde
+                os vampiros não são apenas figuras lendárias, mas sim governantes supremos de uma Terra envolta na noite
+                eterna.<br>
                 A história se desenrola em meio ao conflito entre os vampiros e a Segunda Inquisição, uma força-tarefa
                 global dedicada à erradicação dessas criaturas sobrenaturais. Após anos de batalhas e rivalidades entre
                 as facções vampíricas do Sabá, Camarilla e Anarquia, uma aliança surpreendente é formada em face da
-                ameaça iminente.<br><br>
-        
+                ameaça iminente.<br>
                 No entanto, enquanto os vampiros unem forças para enfrentar a Segunda Inquisição, uma antiga ancila
-                desperta, buscando subverter o equilíbrio de poder e mergulhar o mundo no caos completo
-                Nesta mesa, os jogadores assumem o papel de vampiro, navegando por uma trama intricada de conspirações,
-                intrigas e batalhas épicas. À medida que a história se desenrola, eles devem tomar decisões difíceis que
-                moldarão o destino do mundo e determinarão o futuro da humanidade.<br><br>
-        
+                desperta, buscando subverter o equilíbrio de poder e mergulhar o mundo no caos completo.
+                Nesta mesa, os jogadores assumem o papel de vampiro, navegando por uma trama intricada de
+                conspirações,intrigas e batalhas épicas. À medida que a história se desenrola, eles devem tomar decisões
+                difíceis que moldarão o destino do mundo e determinarão o futuro da humanidade.<br>
                 Prepare-se para mergulhar em um mundo de trevas e mistério, onde as linhas entre o bem e o mal se tornam
                 borradas, e a sobrevivência depende da coragem, astúcia e força dos personagens. Em "Legacy of the
-                Damned", a aventura está apenas começando. Onde você se encaixa neste conto sombrio de poder e traição?
+                Damned", a aventura está apenas começando. <br><br>Onde você se encaixa neste conto sombrio de poder e
+                traição?
             </p>
-            <button class="button-ver-mais" ><a href="historia-do-mundo.html">Saiba mais</a></button>
+            <button class="home__button">
+                <a href="historia-do-mundo.html" class="home__button-link">Saiba mais</a>
+            </button>
         </div>
-        
     </main>
-    <section class="hidden" id="personagem1">
-        <div >
-            <img class="img-perssonagem-responsivo" src="src/img/Briar-removebg.png" alt="">
-            <img class="icon-perssonagem" src="src/img/1-icon.png" alt="">
-            <img class="icon-clan" src="src/img/icon-gangrel.png" alt="">
-                
-        </div>
-        <div class="personagem">
-            <div class="pop-up">
-                <h2 class="nome-clan">Clã Gangrel</h2>
-                <p class="text">
+    <section class="personagem personagem--hidden" id="personagem1">
+        <div class="personagem__container">
+            <div class="personagem__pop-up">
+                <h2 class="personagem__clan-name">Clã Gangrel</h2>
+                <p class="personagem__text">
                     Uma fome mais antiga que a humanidade queima dentro dos lobos. <br><br>
-                    Enquanto outros Membros amaldiçoam seus apetites e escolhem a gaiola dourada das cidades e a coleira da hierarquia
+                    Enquanto outros Membros amaldiçoam seus apetites e escolhem a gaiola dourada das cidades e a coleira
+                    da hierarquia
                     social, os lobos aceitam a Besta como parte de si mesmos e correm livres.<br><br>
-                    Cruzando fronteiras entre espécies, nações e domínios com a facilidade dos predadores perfeitos, eles pertencem ao
+                    Cruzando fronteiras entre espécies, nações e domínios com a facilidade dos predadores perfeitos,
+                    eles pertencem ao
                     selvagem e o selvagem pertence a eles.
                 </p>
             </div>
-            <button class="info"><span class="material-symbols-outlined">
-                info
-                </span></button>
-            
-            <div class="conteudo">
-                <h1 class="nome-personagem">Briar Thorne</h1>
-                <p class="historia">Após anos de luta incansável em defesa da natureza e dos inocentes, Briar Thorne
+            <button class="personagem__info">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+            </button>
+            <div class="personagem__content">
+                <h1 class="personagem__name">Briar Thorne</h1>
+                <p class="personagem__story">
+                    Após anos de luta incansável em defesa da natureza e dos inocentes, Briar Thorne
                     continua sua jornada como uma força da natureza no mundo das sombras. Os Guardiões Verdes, sob sua
                     liderança, expandiram sua influência e se tornaram uma voz poderosa contra a exploração e destruição
                     do meio ambiente.<br><br>
-
                     Embora tenha enfrentado inúmeros desafios e adversários ao longo do caminho, Briar permanece
                     inabalável em sua determinação de proteger os lugares selvagens que tanto ama. Sua jornada é uma
                     saga de coragem, sacrifício e redenção, uma história que ecoa através das sombras, inspirando outros
                     a se levantarem em defesa da Terra e de todos os seres vivos que nela habitam.<br><br>
-
                     Enquanto as estrelas brilharem sobre a noite eterna, o nome de Briar Thorne será lembrado como uma
                     luz na escuridão, uma esperança para os oprimidos e uma lembrança de que, mesmo nas profundezas da
-                    noite, a natureza encontra uma maneira de florescer.<br><br>
+                    noite, a natureza encontra uma maneira de florescer.<br><br>
                 </p>
-
             </div>
         </div>
     </section>
-    <section class="hidden" id="personagem2">
-        <div >
-            <img class="img-perssonagem-responsivo" src="src/img/Ruby-removebg.png" alt="">
-            <img class="icon-perssonagem" src="src/img/2-icon.png" alt="">
-            <img class="icon-clan" src="src/img/icon-gangrel.png" alt="">
-                
-        </div>
-        <div class="personagem">
-            <div class="pop-up">
-                <h2 class="nome-clan">La sombras</h2>
-                <p class="text">
+    <section class="personagem personagem--hidden" id="personagem2">
+        <div class="personagem__container">
+            <div class="personagem__pop-up">
+                <h2 class="personagem__clan-name">La sombras</h2>
+                <p class="personagem__text">
                     Quando você entra na escuridão, e não pode ver nada a não ser as trevas, você está realmente
-                    sozinho. As vozes se tornam distantes.<br><br> Até mesmo a luz fraca das estrelas parecem uma mera esperança
+                    sozinho. As vozes se tornam distantes.<br><br> Até mesmo a luz fraca das estrelas parecem uma mera
+                    esperança
                     que se desvanece, devoradas pela negrume. Não existe nada. Nada a não ser você.
                 </p>
             </div>
-            <button class="info"><span class="material-symbols-outlined">
-                info
-                </span></button>
-            
-            <div class="conteudo">
-                <h1 class="nome-personagem">Ruby Victoria </h1>
-                <p class="historia"> Ruby se destaca na era moderna aproveitando ao máximo o luxo e os privilégios que
+            <button class="personagem__info">
+            </button>
+            <div class="personagem__content">
+                <h1 class="personagem__name">Ruby Victoria</h1>
+                <p class="personagem__story">
+                    Ruby se destaca na era moderna aproveitando ao máximo o luxo e os privilégios que
                     ela oferece. Com um talento natural para ideias divertidas e atrativas, cria um clube noturno que se
-                    torna rapidamente um ponto de referência na cena local, atraindo uma clientela leal e especializada.<br><br>
+                    torna rapidamente um ponto de referência na cena local, atraindo uma clientela leal e
+                    especializada.<br><br>
 
                     Ao longo do tempo, o estabelecimento passa por diversas transformações para manter-se atualizado e
                     relevante, garantindo assim seu sucesso contínuo e trazendo riqueza e prestígio. Além disso, Ruby se
@@ -152,57 +132,16 @@
                     não tenha acesso direto a eles.<br><br>
 
                     Apesar de não ser motivada pela hierarquia, ela reconhece a utilidade de seu trabalho como
-                    intermediário entre os Membros do Clã.</p>
-            </div>
-        </div>
-    </section>
-    <section class="hidden" id="personagem3">
-        <div >
-            <img class="img-perssonagem-responsivo" src="src/img/Roy-removebg.png" alt="">
-            <img class="icon-perssonagem" src="src/img/3-icon.png" alt="">
-            <img class="icon-clan" src="src/img/icon-gangrel.png" alt="">
-                
-        </div>
-        <div class="personagem">
-            <div class="pop-up">
-                <h2 class="nome-clan">Sangue Ralo</h2>
-                <p class="text">
-                    Uma geração deteriorada, um prenúncio dos fins dos tempos ou vampiros do novo mundo? Balançando
-                    entre a vida e a morte, a constante mudança dos Sangue Fracos evocam pena, inveja, e medo em medidas
-                    iguais. Sobreviventes das últimas décadas de estrago, preconceito e ostracismo prova que os Sangue
-                    Fracos vieram pra ficar. <br><br>
-                    Sua confusa alquimia e a habilidade de fingir ser humano, simplesmente, faz
-                    deles adequados a viverem fora da sociedade vampírica a cuidarem de seus próprios destinos nas
-                    noites pós-modernas.
+                    intermediário entre os Membros do Clã.
                 </p>
             </div>
-            <button class="info"><span class="material-symbols-outlined">
-                info
-                </span></button>
-
-            <div class="conteudo">
-                <h1 class="nome-personagem">Roy Joubert
-                </h1>
-                <p class="historia">Roy renasceu como um vampiro muito jovem, com apenas 17 anos neste vasto mundo, no
-                    começo só pensava em sobreviver mas com o passar do tempo começou a estudar esvas medicinais e
-                    fabricar armas relacionada ao século que estava.<br><br>
-                    Nos dias atuais trabalha de dia como um farmaceutico de remédios naturais e de noite como um
-                    mercenário de aluguel mas sempre bem vestido de terno, com uma caixa de violão nas costas e uma
-                    aparência vivida e jovem com o coração pulsando.</p>
-            </div>
         </div>
     </section>
-    <section class="hidden" id="personagem4">
-        <div >
-            <img class="img-perssonagem-responsivo" src="src/img/Fenrir-removebg.png" alt="">
-            <img class="icon-perssonagem" src="src/img/4-icon.png" alt="">
-            <img class="icon-clan" src="src/img/icon-gangrel.png" alt="">
-                
-        </div>
-        <div class="personagem">
-            <div class="pop-up">
-                <h2 class="nome-clan">Ventrue</h2>
-                <p class="text">
+    <section class="personagem personagem--hidden" id="personagem3">
+        <div class="personagem__container">
+            <div class="personagem__pop-up">
+                <h2 class="personagem__clan-name">Sangue Ralo</h2>
+                <p class="personagem__text">
                     Uma geração deteriorada, um prenúncio dos fins dos tempos ou vampiros do novo mundo? Balançando
                     entre a vida e a morte, a constante mudança dos Sangue Fracos evocam pena, inveja, e medo em medidas
                     iguais. Sobreviventes das últimas décadas de estrago, preconceito e ostracismo prova que os Sangue
@@ -212,13 +151,45 @@
                     noites pós-modernas.
                 </p>
             </div>
-            <button class="info"><span class="material-symbols-outlined">
-                info
-                </span></button>
-            
-            <div class="conteudo">
-                <h1 class="nome-personagem">Fenrir </h1>
-                <p class="historia">Fenrir um homem alto com raiva de todos de seu clã, se destaca por ser estrategista
+            <button class="personagem__info">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+            </button>
+            <div class="personagem__content">
+                <h1 class="personagem__name">Roy Joubert</h1>
+                <p class="personagem__story">
+                    Roy renasceu como um vampiro muito jovem, com apenas 17 anos neste vasto mundo, no
+                    começo só pensava em sobreviver mas com o passar do tempo começou a estudar esvas medicinais e
+                    fabricar armas relacionada ao século que estava.<br><br>
+                    Nos dias atuais trabalha de dia como um farmaceutico de remédios naturais e de noite como um
+                    mercenário de aluguel mas sempre bem vestido de terno, com uma caixa de violão nas costas e uma
+                    aparência vivida e jovem com o coração pulsando.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="personagem personagem--hidden" id="personagem4">
+        <div class="personagem__container">
+            <div class="personagem__pop-up">
+                <h2 class="personagem__clan-name">Ventrue</h2>
+                <p class="personagem__text">
+                    Uma geração deteriorada, um prenúncio dos fins dos tempos ou vampiros do novo mundo? Balançando
+                    entre a vida e a morte, a constante mudança dos Sangue Fracos evocam pena, inveja, e medo em medidas
+                    iguais. Sobreviventes das últimas décadas de estrago, preconceito e ostracismo prova que os Sangue
+                    Fracos vieram pra ficar. <br><br>
+                    Sua confusa alquimia e a habilidade de fingir ser humano, simplesmente, faz
+                    deles adequados a viverem fora da sociedade vampírica a cuidarem de seus próprios destinos nas
+                    noites pós-modernas.
+                </p>
+            </div>
+            <button class="personagem__info" onclick="togglePopUp()">
+                <span class="material-symbols-outlined">info</span>
+            </button>
+            <div class="personagem__content">
+                <h1 class="personagem__name">Fenrir</h1>
+                <p class="personagem__story">
+                    Fenrir um homem alto com raiva de todos de seu clã, se destaca por ser estrategista
                     e pensativo, raramente usa força bruta para resolver seus problemas, sempre sendo cordial em tudo
                     que faz coloca-se em um posto de igual mas ao mesmo tempo habilidoso em quesito de enganar e
                     ludibriar, aproveita ao máximo suas riquezas que mantém por muito tempo sendo relevante em sua loja
@@ -228,79 +199,50 @@
                     destacava por ser de uma arquitetura “moderna”, mas mesmo assim a casa é afastada de tudo e todos
                     gosta do silêncio que a natureza o proporciona.<br><br>
                     Por mais que não use força bruta, não se importará de passar por cima de qualquer um que ousar
-                    ameaçar sua protegida.</p>
+                    ameaçar sua protegida.
+                </p>
             </div>
         </div>
     </section>
-    <section class="hidden" id="personagem5">
-        <div >
-            <img class="img-perssonagem-responsivo" src="src/img/dominic-removebg.png" alt="">
-            <img class="icon-perssonagem" src="src/img/5-icon-.png" alt="">
-            <img class="icon-clan" src="src/img/icon-gangrel.png" alt="">
-                
-        </div>
-        <div class="personagem">
-            <div class="personagem">
-                <div class="pop-up">
-                    <h2 class="nome-clan">Brujha</h2>
-                    <p class="text">
-                        O sonho do clã erudito é um mundo onde toda a injustiça foi eliminada e vivos e não-vivos podem
-                        coexistir em paz. <br><br>
-                        Eles dizem que é pelo amor dos mortais que eles os conduzem contra seus
-                        mestres. Na verdade, eles podem simplesmente se enfurecer contra um Deus distante ou inexistente
-                        que eles nunca poderão lutar, contra uma maldição que eles nunca poderão acabar.
-                    </p>
-                </div>
-                <button class="info"><span class="material-symbols-outlined">
+    <section class="personagem personagem--hidden" id="personagem5">
+        <div class="personagem__container">
+            <div class="personagem__pop-up">
+                <h2 class="personagem__clan-name">Brujha</h2>
+                <p class="personagem__text">
+                    O sonho do clã erudito é um mundo onde toda a injustiça foi eliminada e vivos e não-vivos podem
+                    coexistir em paz. <br><br>
+                    Eles dizem que é pelo amor dos mortais que eles os conduzem contra seus
+                    mestres. Na verdade, eles podem simplesmente se enfurecer contra um Deus distante ou inexistente
+                    que eles nunca poderão lutar, contra uma maldição que eles nunca poderão acabar.
+                </p>
+            </div>
+            <button class="personagem__info">
+                <span class="material-symbols-outlined">
                     info
-                    </span></button>
-                
-                <div class="conteudo">
-                    <h1 class="nome-personagem">Dominic</h1>
-                    <p class="historia">Um poderoso vampiro Brüjah, teve uma relação explosiva com sua coterie feroz,
-                        mas o destino os separou. Ele conheceu Ayla, uma vampira incrível, em Tóquio, e eles se envolveram em um relacionamento apaixonado.<br><br>
-                        No entanto, Dominic entrou em conflito com a Yakuza, a máfia de vampiros, e foi capturado por
-                        eles.<br><br>
-                        Ayla o resgatou, mas sacrificou-se para salvar Dominic durante um confronto com o chefe da
-                        Yakuza.<br><br>
-                        Dominic ficou amargurado e devastado após sua morte, afundando-se em autodestruição.<br><br>
-                        Ele retornou ao submundo dos vampiros, buscando vingança contra a Yakuza. Sua raiva e
-                        determinação cresceram, e ele se tornou uma figura respeitada e temida. Dominic desenvolveu habilidades em tortura vampírica, tornando-se um especialista em infligir dor.<br><br>
-                        Suas algemas são sua marca registrada, e ele as carrega como símbolo de seus pecados e sua busca por vingança.</p>
-                </div>
+                </span>
+            </button>
+            <div class="personagem__content">
+                <h1 class="personagem__name">Dominic</h1>
+                <p class="personagem__story">Um poderoso vampiro Brüjah, teve uma relação explosiva com sua coterie
+                    feroz,
+                    mas o destino os separou. Ele conheceu Ayla, uma vampira incrível, em Tóquio, e eles se envolveram
+                    em um relacionamento apaixonado.<br><br>
+                    No entanto, Dominic entrou em conflito com a Yakuza, a máfia de vampiros, e foi capturado por
+                    eles.<br><br>
+                    Ayla o resgatou, mas sacrificou-se para salvar Dominic durante um confronto com o chefe da
+                    Yakuza.<br><br>
+                    Dominic ficou amargurado e devastado após sua morte, afundando-se em autodestruição.<br><br>
+                    Ele retornou ao submundo dos vampiros, buscando vingança contra a Yakuza. Sua raiva e
+                    determinação cresceram, e ele se tornou uma figura respeitada e temida. Dominic desenvolveu
+                    habilidades em tortura vampírica, tornando-se um especialista em infligir dor.<br><br>
+                    Suas algemas são sua marca registrada, e ele as carrega como símbolo de seus pecados e sua busca por
+                    vingança.
+                </p>
             </div>
+        </div>
     </section>
-    
-    <script src="./src/js/script.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function() {
-        const hamburger = document.querySelector(".hamburger");
-        const nav = document.querySelector("nav");
-    
-        // Função para alternar a classe 'active' no ícone do menu hamburger e exibir/ocultar o menu
-        function toggleMenu() {
-            
-            hamburger.classList.toggle("active"); // Adiciona ou remove a classe 'active' do ícone do menu hamburger
-            nav.classList.toggle("open"); // Adiciona ou remove a classe 'open' no elemento de navegação
-        }
-    
-        // Adiciona um evento de clique ao ícone do menu hamburger
-        hamburger.addEventListener("click", function() {
-            toggleMenu(); // Chama a função toggleMenu quando o ícone do menu hamburger é clicado
-        });
-    
-        // Adiciona um evento de clique aos itens do menu para fechar o menu ao clicar em um item
-        const menuItems = document.querySelectorAll(".main-nav li a");
-        menuItems.forEach(function(item) {
-            item.addEventListener("click", function() {
-                if (nav.classList.contains("open")) {
-                    toggleMenu(); // Fecha o menu se estiver aberto
-                }
-            });
-        });
-    });
-    
-        
-    </script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/scriptGlobal.js"></script>
 </body>
 
 </html>

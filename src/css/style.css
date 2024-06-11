@@ -1,339 +1,293 @@
-* {
-    box-sizing: border-box;
-}
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    font-family: 'Cinzel', serif;
-    background-color: #000;
-}
-
-/* Ocultar todas as seções */
-section {
-    /* display: none;*/
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos para o logotipo */
-.logo img {
-    max-width: 150px;
-    /* Define a largura máxima como 150 pixels */
-}
-
-.cabecalho {
-    
-    position: fixed; /* Define a posição como fixa */
-    top: 0; /* Alinha o topo ao topo da janela de visualização */
-    left: 0; /* Alinha a esquerda ao lado esquerdo da janela de visualização */
-    width: 100%; /* Define a largura como 100% da largura do pai */
-    background-color: #000; /* Define a cor de fundo como preto */
-    padding: 3px 50px; /* Define o preenchimento superior/inferior como 3px e os lados esquerdo/direito como 20px */
-    display: flex; /* Define a exibição como flexível */
-    justify-content: space-between; /* Distribui o espaço entre os itens */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    height: 50px; /* Define a altura como 60 pixels */
-    z-index: 999; /* Para garantir que o cabeçalho fique sobreposto a outros elementos */
-    height: 60px;
-}
-
-nav {
-    background-color: #000;
-    height: 50px;
-    display: flex; /* Alterado para exibição flexível */
-    align-items: center; /* Alinhamento vertical */
-    z-index: 1000;
-}
-nav.open {
-    display: flex;
-    background-color: rgba(13, 13, 13, 0.9);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 60px;
-    left: 0;
-   
-    
-
-}
-
-.main-nav {
-    margin: 0;
-    padding: 0;
-    margin-left: 20px; /* Adicionado margem à esquerda */
-}
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.main-nav li {
-    display: inline-block;
-    margin: 20px 0;
-}
-
-.main-nav li a {
-    font-size: 1.5rem;
-    display: block;
-    padding: 20px;
-    color: white;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    display: block;
-}
-.main-nav li a:hover  {
-    background-color: #800; /* Altera a cor de fundo quando o mouse passa sobre o elemento */
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-.hamburger {
-    display: none; 
-}
-
-.hamburger .line {
-    background-color: #c9afaf;
-    height: 3px;
-    width: 25px;
-    margin: 5px 0;
-}
-/* Estilo home */
 .home {
-    width: 100%;
-    height: 100%;
-   /*background-image: url(../img/home.png);*/
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/rpg-vampiro-a-mascara.jpg);
     background-size: cover;
     background-position: center;
+    opacity: 0.5; 
+    z-index: -1; 
 }
 
-.conteudo-home {
-    background: rgba(15, 15, 15, 0.1);
-    border-radius: 20px;
-    position: absolute;
-    width: 150vh;
-    /* Reduzi a largura para melhor se ajustar */
-    height: 65vh;
-    /* Alterado para altura em vh */
-    top: 45vh;
-    /* Alterado para margem superior em vh */
-    left: 50%;
-    transform: translate(-50%, -50%);
+main.home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
     padding: 20px;
-    /* Adiciona espaço interno para o texto */
 }
 
-.nome-rpg {
-    color: #8B0000;
-    font-size: 6vh;
-    /* Alterado para tamanho de fonte em vh */
+.home__content {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1; 
+}
+
+.home__title {
     font-family: "Reed";
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 6vh;
+    color: #800;
     margin-bottom: 3vh;
-    /* Alterado para margem inferior em vh */
-    text-align: center;
 }
 
-.historia-rpg {
-    text-align: center;
-    color: #f4eded;
-    font-family: 'Cinzel', serif;
+.home__story {
+    color: #fff;
     font-size: 2vh;
-    /* Alterado para tamanho de fonte em vh */
     font-weight: 400;
-    line-height: 1.2;
+}
+
+.home__button {
+    background-color: #800;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.home__button-link {
+    color: #fff;
     
 }
 
-/* Estilos para o botão */
-.button-ver-mais {
-    position: absolute;
-    left: 50%;
-    top: calc(70vh + 20px); /* 20px de espaço entre o .historia e o botão */
-    transform: translateX(-50%);
-    padding: 2vh;
-    background: #8B0000;
-    color: #fff;
-    font-size: 2vh;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s ease;
+.home__button:hover {
+    background-color: #e63946;
+}
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .home__title {
+        font-size: 5vh;
+    }
+
+    .home__story {
+        font-size: 1.8vh;
+    }
 }
 
-.button-ver-mais:hover {
-    border: 1px solid #000;
-    background: #e44747;
-    color: #000;
+@media (max-width: 992px) {
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .home__title {
+        font-size: 4.5vh;
+    }
+
+    .home__story {
+        font-size: 1.6vh;
+    }
+
+    .home__content {
+        padding: 15px;
+    }
+
+    .home::before {
+        background-image: url(../img/home.png);
+    }
 }
 
+@media (max-width: 768px) {
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
 
+    .home__title {
+        font-size: 4vh;
+    }
 
-/* Estilos para section de perssonagens */
+    .home__story {
+        font-size: 1.5vh;
+    }
+
+    .home__content {
+        padding: 10px;
+    }
+
+    .home__button {
+        padding: 8px 12px;
+    }
+
+    .home::before {
+        background-image: url(../img/home.png);
+    }
+}
+
+@media (max-width: 576px) {
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .home__title {
+        font-size: 3.5vh;
+    }
+
+    .home__story {
+        font-size: 1.4vh;
+    }
+
+    .home__content {
+        max-width: 90%;
+        padding: 5px;
+    }
+
+    .home__button {
+        padding: 6px 10px;
+    }
+
+    .home::before {
+        background-image: url(../img/home.png);
+    }
+}
 .personagem {
-    position: relative;
-    margin-bottom: 50px;
-}
-.img-perssonagem-responsivo,.icon-perssonagem,.icon-clan{
-    display: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 #personagem1 {
-    background-image: url(../img/1.png);
+    background-image: url(../img/perssonagem-1.png);
     background-size: cover;
     background-position: center;
 }
 
 #personagem2 {
-    background-image: url(../img/2.png);
+    background-image: url(../img/perssonagem-2.png);
     background-size: cover;
     background-position: center;
 }
 
 #personagem3 {
-    background-image: url(../img/3.png);
+    background-image: url(../img/perssonagem-3.png);
     background-size: cover;
     background-position: center;
 }
 
 #personagem4 {
-    background-image: url(../img/4.png);
+    background-image: url(../img/perssonagem-4.png);
     background-size: cover;
     background-position: center;
 }
 
 #personagem5 {
-    background-image: url(../img/5.png);
+    background-image: url(../img/perssonagem-5.png);
     background-size: cover;
     background-position: center;
 }
-
-.conteudo {
-    background: rgba(13, 13, 13, 0.1);
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    width: 650px;
-    height: auto;
-    top: 150px;
-    left: 60px;
+.personagem__container{
+    background: rgba(43, 41, 41, 0.1);
+    max-width: 700px;
+    text-align: center;
+    padding: 15px;
     border-radius: 10px;
-
+    
 }
 
-.nome-personagem {
-    color: #8B0000;
+.personagem__name{
+    color: #800;
     font-size: 6vh;
-    /* Alterado para tamanho de fonte em vh */
     font-family: "Reed";
     font-weight: 400;
     margin-bottom: 2vh;
-    /* Alterado para margem inferior em vh */
     text-align: center;
 }
-
-.historia {
+.personagem__story{
     color: #f4eded;
-    font-family: 'Cinzel', serif;
     font-size: 2vh;
-    /* Alterado para tamanho de fonte em vh */
     font-weight: 400;
-    line-height: 1.2;
 }
 
-/* Estilos para historia do clan*/
 
-
-
-.info-container {
-    position: relative;
+/* Para 992px */
+@media only screen and (max-width: 992px) {
+    .personagem__container{
+        background: rgba(0, 0, 0, 0.5);
+        
+    }
 }
 
-.info {
-    position: fixed;
-    top: 20%;
-    left: 15%;
-    margin: 0;
-    background-color: rgba(238, 230, 230, 0.3);
-    border-radius: 70%;
-    cursor: pointer;
+/* Para 768px */
+@media only screen and (max-width: 768px) {
+    .personagem__container{
+        background: rgba(0, 0, 0, 0.5);
+        
+    }
+    #personagem1 {
+        background-image: url(../img/telas/Briar-768.png);
+    }
+    #personagem2 {
+        background-image: url(../img/telas/Ruby-768.png);
+    }
+    #personagem3 {
+        background-image: url(../img/telas/Roy-768.png);
+    }
+    #personagem4 {
+        background-image: url(../img/telas/Fenrir-768.png);
+    }
+    #personagem5 {
+        background-image: url(../img/telas/Dominic-768.png);
+    }
 }
 
-.pop-up {
+/* Para 576px */
+@media only screen and (max-width: 576px) {
+    .personagem__container{
+        background: rgba(0, 0, 0, 0.5);
+        
+    }
+
+    .personagem__title {
+        font-size: 4vh;
+    }
+
+    .personagem__story {
+        font-size: 1.5vh;
+    }
+    #personagem1 {
+        background-image: url(../img/telas/briar-576.png);
+    }
+    #personagem2 {
+        background-image: url(../img/telas/ruby-576.png);
+    }
+    #personagem3 {
+        background-image: url(../img/telas/Roy-576.png);
+    }
+    #personagem4 {
+        background-image: url(../img/telas/Fenrir-576.png);
+    }
+    #personagem5 {
+        background-image: url(../img/telas/Dominic-576.png);
+    }
+}
+.personagem__pop-up {
     display: none;
-    position: fixed;
-    top: 30vh;
-    left: 30vh;
-    background-color: rgba(13, 13, 13, 0.9);
-    padding: 2vh;
-    border-radius: 5px;
-    border: 1px solid #8B0000;
-    width: 500px;
-    z-index: 9999;
 }
 
-.nome-clan {
-    color: #fff;
-    font-family: 'Cinzel', serif;
-    font-size: 2vh;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1vh;
+.personagem__info {
+    display: none;
 }
 
-.text {
-    color: #fff;
-    font-family: 'Cinzel', serif;
-    text-align: left;
-    font-size: 1.8vh;
-    font-weight: 400;
-    line-height: 1.5;
-
-}
-
-.info-container:hover .pop-up {
-    display: block;
-}
-
-
-
-/* Animação das section */
-
-.hidden {
-    opacity: 0;
-    filter: blur(1.5vh);
-    /* Alterado para desfoque em vh */
-    transition: all 2s;
-
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0vh);
-    /* Alterado para desfoque em vh */
-    transition: all 2s;
-}
