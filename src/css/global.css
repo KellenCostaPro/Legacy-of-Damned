@@ -1,11 +1,11 @@
 body {
     background-color: #111;
-    /* overflow: hidden;  */
     font-family: 'Cinzel', serif;
+    margin: 0;
+    padding-top: 6rem; /* Adicionado para evitar sobreposição */
 }
 
 section {
-    /* display: none;*/
     width: 100%;
     height: 100%;
 }
@@ -21,7 +21,9 @@ section {
     background-color: #0c0c0c;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     color: white;
-    position: relative;
+    position: fixed; /* Alterado para fixo */
+    top: 0; /* Fixar no topo da página */
+    left: 0;
     z-index: 1000;
 }
 

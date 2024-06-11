@@ -1,318 +1,276 @@
-* {
-    margin: 0; /* Define margem como 0 */
-    padding: 0; /* Define preenchimento como 0 */
-    box-sizing: border-box; /* Define a caixa de modelo como border-box */
-    font-family: 'Cinzel', serif;
-}
-
-/* Estilos para o corpo da página */
-body {
-    min-height: 100vh; /* Define a altura mínima como 100% da altura da tela */
-    display: flex; /* Define a exibição como flexível */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    justify-content: center; /* Alinha os itens ao centro horizontalmente */
-    background-image: url(../img/sessoes.png); /* Define uma imagem de fundo */
-    /*overflow: hidden;  Remove o scroll vertical */
-    background-size: cover; 
-    background-position: center; 
-}
-
-/* Estilos para o cabeçalho */
-.cabecalho {
-    position: fixed; /* Define a posição como fixa */
-    top: 0; /* Alinha o topo ao topo da janela de visualização */
-    left: 0; /* Alinha a esquerda ao lado esquerdo da janela de visualização */
-    width: 100%; /* Define a largura como 100% da largura do pai */
-    background-color: #000; /* Define a cor de fundo como preto */
-    padding: 3px 50px; /* Define o preenchimento superior/inferior como 3px e os lados esquerdo/direito como 20px */
-    display: flex; /* Define a exibição como flexível */
-    justify-content: space-between; /* Distribui o espaço entre os itens */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    height: 50px; /* Define a altura como 60 pixels */ z-index: 999;
-    /* Para garantir que o cabeçalho fique sobreposto a outros elementos */
-    height: 60px;
-}
-
-/* Estilos para o logotipo */
-.logo img {
-    max-width: 150px; /* Define a largura máxima como 150 pixels */
-    height: auto; /* Define a altura automática */
-}
-
-/* Estilos para o menu de desktop */
-.desktop-menu ul li {
-    display: inline-block; /* Define a exibição como inline-block */
-    margin-left: 15px; /* Define a margem à esquerda como 15 pixels */
-}
-
-.desktop-menu ul li a {
-    text-decoration: none; /* Remove a decoração de texto */
-    color: #f5f3f3; /* Define a cor do texto como cinza claro */
-    transition: all 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.desktop-menu ul li a:hover {
-    color: #8B0000; /* Define a cor do texto como vermelho escuro ao passar o mouse */
-    transform: scale(1.1); /* Aplica uma escala ao elemento ao passar o mouse */
-}
-
-/* Estilos para o submenu dropdown */
-.dropdown-content {
-    display: none; /* Oculta o elemento */
-    position: absolute; /* Define a posição como absoluta */
-    background-color: #060606; /* Define a cor de fundo como cinza escuro */
-    min-width: 160px; /* Define a largura mínima como 160 pixels */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
-    z-index: 1; /* Define a ordem de empilhamento */
-}
-
-.dropdown-content a {
-    color: black; /* Define a cor do texto como preto */
-    padding: 12px 16px; /* Define o preenchimento */
-    text-decoration: none; /* Remove a decoração de texto */
-    display: block; /* Define a exibição como bloco */
-}
-
-.dropdown-content a:hover {
-    background-color: #060505; /* Define a cor de fundo como cinza mais escuro ao passar o mouse */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block; /* Exibe o submenu ao passar o mouse sobre o elemento pai */
-}
-
-/* Estilos para o conteúdo principal */
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.wrapper {
     width: 100%;
-    height: 100%;
-    }
-
-.conteudo {
-    max-width: 100vw; /* Define a largura máxima como 100% da largura da tela */
-    margin-top: 60px; 
-    padding: 30px; 
-    text-align: center; /* Alinha o texto ao centro */
-    overflow-x: auto; /* Adiciona scroll horizontal se necessário */
-    overflow-y: hidden; /* Remove o scroll vertical */
-}
-.titulo{
-    color: #8B0000;
-    font-family: "Reed";
-    font-size: 40px;
-    padding: 10px 5px;
-
-}
-.descricao{
-    color: #cbc7c7;
-    font-family: 'Cinzel', serif;
-    font-size: 12pt;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Estilos para o contêiner de slides */
-.slide-container {
-    max-width: 1120px; /* Define a largura máxima como 1120 pixels */
-    width: 100%; /* Define a largura como 100% */
-    height: 470px; /* Define a altura como 470 pixels */
-    padding: 0; /* Define o preenchimento como 0 */
-    
-    margin: 0 auto; /* Centraliza horizontalmente */
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
 }
 
-
-/* Estilos para o conteúdo do slide */
-.slide-content {
-    margin: 0 40px; /* Define a margem esquerda/direita como 40 pixels */
-    border-radius: 25px; /* Define o raio da borda */
-    max-height: 100%; /* Define a altura máxima como 100% */
-}
-
-/* Estilos para o contêiner de cartões */
-.card-wrapper {
-    display: flex; /* Define a exibição como flexível */
-
-    padding-bottom: 5px; /* Define o preenchimento inferior como 5 pixels */
-    overflow-x: auto; /* Adiciona scroll horizontal para os cartões */
-}
-
-/* Estilos para cada cartão */
 .card {
-    flex: 0 0 auto; /* Define o crescimento e encolhimento automáticos */
-    width: 250px; /* Define a largura como 250 pixels */
-    margin-right: 15px; /* Define a margem direita como 15 pixels */
-    border-radius: 50px; /* Define o raio da borda */
-    background-color: #1b1b1b; /* Define a cor de fundo como cinza escuro */
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    position: relative;
 }
 
-/* Estilos para o conteúdo da imagem do cartão */
-.image-content, .card-content {
-    display: flex; /* Define a exibição como flexível */
-    flex-direction: column; /* Define a direção da flexão como coluna */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    padding: 5px 10px; /* Define o preenchimento */
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Estilos para o conteúdo da imagem */
-.image-content {
-    position: relative; /* Define a posição como relativa */
-    row-gap: 5px; /* Define o espaçamento entre linhas */
+.card > .row > .icon {
+    background-image: url(../img/card.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 }
 
-/* Estilos para a sobreposição */
-.overlay {
-    position: absolute; /* Define a posição como absoluta */
-    left: 0; /* Alinha a esquerda ao início do contêiner pai */
-    top: 0; /* Alinha o topo ao início do contêiner pai */
-    height: 100%; /* Define a altura como 100% */
-    width: 100%; /* Define a largura como 100% */
-    background-color: #000; /* Define a cor de fundo como preto */
-    border-radius: 25px 25px 0 25px; /* Define o raio da borda */
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
 }
 
-.overlay::before, .overlay::after {
-    content: ''; /* Adiciona conteúdo antes e depois */
-    position: absolute; /* Define a posição como absoluta */
-    right: 0; /* Alinha a direita ao início do contêiner pai */
-    bottom: -40px; /* Define a distância do fundo */
-    height: 40px; /* Define a altura como 40 pixels */
-    width: 40px; /* Define a largura como 40 pixels */
-    background-color: #000; /* Define a cor de fundo como preto */
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
 }
 
-.overlay::after {
-    border-radius: 0 25px 0 0; /* Define o raio da borda */
-    background-color: #1b1b1b; /* Define a cor de fundo como cinza escuro */
+.description h4 {
+    text-transform: uppercase;
+    
 }
 
-/* Estilos para a imagem do cartão */
-.card-image {
-    display: flex; /* Define a exibição como flexível */
-    position: relative; /* Define a posição como relativa */
-    height: 150px; /* Define a altura como 150 pixels */
-    width: 150px; /* Define a largura como 150 pixels */
-    border-radius: 50%; /* Define o raio da borda como metade da largura */
-    padding: 3px; /* Define o preenchimento */
-}
-
-/* Estilos para a imagem do cartão */
-.card-image .card-img {
-    height: 100%; /* Define a altura como 100% */
-    width: 100%; /* Define a largura como 100% */
-    object-fit: cover; /* Redimensiona a imagem para cobrir o contêiner */
-}
-
-/* Estilos para o nome do cartão */
-.nome {
-    padding: 10px 0 5px 0;
-    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
-    font-weight: 500; /* Define o peso da fonte como 500 */
-    color: #bbb7b7; /* Define a cor do texto como vermelho escuro */
-    text-align: center; /* Alinha o texto ao centro */
-    border-radius: 20%;
-}
-
-/* Estilos para a data do cartão */
-.data {
-    font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
-    font-weight: 600; /* Define o peso da fonte como 400 */
-    color: #3f0303; /* Define a cor do texto como cinza */
-    text-align: center; /* Alinha o texto ao centro */
-}
-
-/* Estilos para o resumo do cartão */
-.resumo {
-    padding: 15px; /* Define o preenchimento */
-    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
-    color: #a3a0a0; /* Define a cor do texto como cinza claro */
-    text-align: center; /* Alinha o texto ao centro */
-}
-
-/* Estilos para o botão */
-.button {
-    border: none; /* Remove a borda */
-    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
-    color: #fff; /* Define a cor do texto como branco */
-    padding: 8px 16px; /* Define o preenchimento */
-    background-color: #8b0000; /* Define a cor de fundo como vermelho escuro */
-    border-radius: 6px; /* Define o raio da borda */
-    margin: 14px; /* Define a margem */
-    cursor: pointer; /* Define o cursor como ponteiro */
-    transition: 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.button:hover {
-    border: 1px solid #000; /* Define a borda ao passar o mouse */
-    background: #fff; /* Define a cor de fundo como branco ao passar o mouse */
-    color: #000; /* Define a cor do texto como preto ao passar o mouse */
-}
-
-/* Estilos da barra de rolagem */
-::-webkit-scrollbar {
-    width: 5px; /* Largura da barra de rolagem */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #070707; /* Cor do indicador da barra de rolagem */
-    border-radius: 15px; /* Raio da borda do indicador */
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #c90a0a; /* Cor do indicador da barra de rolagem ao passar o mouse */
-}
-
-/* Estilos para o pop-up overlay */
-.popup-overlay {
+input {
     display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('../img/sessoes/sessao_1.jpg');
+}
+
+.card[for="c2"] {
+    background-image: url('../img/sessoes/sessao_2.jpg');
+}
+
+.card[for="c3"] {
+    background-image: url('../img//sessoes/sessao_3.jpg');
+}
+
+.card[for="c4"] {
+    background-image: url('../img/dominic-removebg.png');
+}
+.card[for="c5"] {
+    background-image: url('../img/sessoes/sessao_1.jpg');
+}
+
+.card[for="c6"] {
+    background-image: url('../img/sessoes/sessao_2.jpg');
+}
+
+.card[for="c7"] {
+    background-image: url('../img//sessoes/sessao_3.jpg');
+}
+
+.card[for="c8"] {
+    background-image: url('../img/sessoes.png');
+}
+.card[for="c9"] {
+    background-image: url('../img/sessoes.png');
+}
+.card[for="c10"] {
+    background-image: url('../img/sessoes.png');
+}
+
+.popup-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
     z-index: 999;
 }
 
-/* Estilos para o conteúdo do pop-up */
 .popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #1b1b1b;
+    background: #fff;
     padding: 20px;
-    border-radius: 10px;
-    max-width: 100%;
-}
-.resumo-full{
-    padding: 15px;
-    color: #f4eded;
-    font-family: 'Cinzel', serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.2;
-    /* Define o espaçamento entre as linhas */
-    letter-spacing: 1px;
-    /* Define o espaçamento entre as letras */
-    white-space: pre-line;
-    /* Para quebras de linha sejam respeitadas */
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
 }
 
-/* Estilos para o botão de fechar o pop-up */
 .popup-close {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 25px;
-    color: #f40707;
+    font-size: 24px;
+    color: #eb0c0c;
 }
 
-/* Estilos para o texto do pop-up */
-.popup-text {
-    margin: 0px;
-    background-color: #131212;
-    max-height: 400px; /* Defina a altura máxima do conteúdo do pop-up */
-    overflow-y: auto; /* Adicione scroll vertical quando necessário */
+.popup-text__name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
+.popup-text__date {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.popup-text__summary-full {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 50%;
+}
+
+.card__button:hover {
+    opacity: 100%;
+    background-color: #800;
+    transform: translate(-50%, -50%) scale(1.05);
+    
+}
+
+.card__button:active {
+    background-color: #1a5276;
+    transform: translate(-50%, -50%) scale(1);
+    
+}
+
+.card__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+.popup-overlay {
+    display: none;
+}
+
+.popup-overlay.active {
+    display: block;
+}
+
+
+/* Estilos para telas menores */
+
+@media only screen and (max-width: 576px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px; /* Adicionando espaço superior */
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .description {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .description h4 {
+        font-size: 16px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    input:checked + label {
+        width: 90%;
+    }
+
+    .card__button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+        transition: none; /* Removendo transição */
+    }
+
+    .card__button:hover {
+        background-color: rgba(0, 0, 0, 0.2); /* Removendo efeito de hover */
+        transform: none; /* Removendo efeito de hover */
+    }
+}
+
+/* Estilos para telas médias */
+
+@media only screen and (max-width: 577px)  {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
 }
