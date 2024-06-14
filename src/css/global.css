@@ -2,7 +2,7 @@ body {
     background-color: #111;
     font-family: 'Cinzel', serif;
     margin: 0;
-    padding-top: 6rem; /* Adicionado para evitar sobreposição */
+    padding-top: 3rem; 
 }
 
 section {
@@ -21,8 +21,8 @@ section {
     background-color: #0c0c0c;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     color: white;
-    position: fixed; /* Alterado para fixo */
-    top: 0; /* Fixar no topo da página */
+    position: fixed; 
+    top: 0; 
     left: 0;
     z-index: 1000;
 }

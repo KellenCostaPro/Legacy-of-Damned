@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/src/imagens/ICON-HOME.png">
+    <link rel="shortcut icon" href="src/img/logo_vampiro.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/sessoes.css">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/global.css">
-    <title>Sessões</title>
+    <title>Legacy of the Damned</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="#home"><img src="src/img/logo_vampiro.png" alt="logo vampiro"></a>
+            <a href="index.html"><img src="src/img/logo_vampiro.png" alt="logo vampiro"></a>
         </div>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -22,11 +22,11 @@
                 <li class="header__nav-item header__nav-item--dropdown">
                     <a href="#personagens" class="header__nav-link">Personagens</a>
                     <div class="header__dropdown-content">
-                        <a href="#personagem1" class="header__dropdown-link">Briar Thorne</a>
-                        <a href="#personagem2" class="header__dropdown-link">Ruby Victoria</a>
-                        <a href="#personagem3" class="header__dropdown-link">Roy Joubert</a>
-                        <a href="#personagem4" class="header__dropdown-link">Fenrir</a>
-                        <a href="#personagem5" class="header__dropdown-link">Dominic</a>
+                        <a href="index.html#personagem1" class="header__dropdown-link">Briar Thorne</a>
+                        <a href="index.html#personagem2" class="header__dropdown-link">Ruby Victoria</a>
+                        <a href="index.html#personagem3" class="header__dropdown-link">Roy Joubert</a>
+                        <a href="index.html#personagem" class="header__dropdown-link">Fenrir</a>
+                        <a href="index.html#personagem" class="header__dropdown-link">Dominic</a>
                     </div>
                 </li>
                 <li class="header__nav-item"><a href="sessoes.html" class="header__nav-link">Sessões</a></li>
@@ -41,11 +41,16 @@
             <div class="header__hamburger-line"></div>
         </div>
     </header>
-    <!--  <main class="container">
+    <main class="main-container">
         <div class="content">
             <h2 class="content__title">Legacy of the Damned</h2>
-            <p class="content__description">Em meio às sombras eternas, onde a sede de sangue é uma constante, as criaturas da noite se reúnem sob o manto da escuridão. <br> Explore os recantos mais sombrios de "Legacy of the Damned", onde cada sessão revela segredos antigos, alianças frágeis e conflitos imortais.</p>
-        </div> -->
+            <p class="content__description">Em meio às sombras eternas, onde a sede de sangue é uma constante, as
+                criaturas da noite se reúnem sob o manto da escuridão.
+                <br> Explore os recantos mais sombrios de "Legacy of the Damned", onde cada sessão revela segredos
+                antigos, alianças frágeis e conflitos imortais.
+            </p>
+        </div>
+    </main>
     <div class="wrapper">
         <div class="container">
             <!-- CARD 1 -->
@@ -59,28 +64,28 @@
                     </div>
                 </div>
                 <button class="card__button" id="button1">Ver mais</button>
-                <!-- POP UP 1 -->
-                <div class="popup-overlay" id="popupOverlay1">
-                    <img src="src/img/dominic-removebg.png" alt="Dominic">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">O Contrato da Noite</h1>
-                            <h2 class="popup-text__date">Data: 02/02/2024</h2>
-                            <p class="popup-text__summary-full">A sessão começou com Roy indo até um barbeiro para
-                                receber sua missão de Mercenário. Logo em seguida, Ruby vem para o Brasil para tratar de
-                                negócios, ampliar seus contratos, chegando ao Brasil ela foi até a boate Neffelins e
-                                conheceu Dominic. Dominic mora no Brasil, ele frequenta sempre a Neffelins, Mariana
-                                (Dona da Neffelins) Entrega uma missão para Dominic, a missão era de ficar de olho em
-                                Ruby, uma vampira promissora e muito perigosa, e descobrir se ela tinha algum contrato
-                                com a Mineradora. Roy chega até a Neffelins também, e acaba conhecendo Dominic e Ruby.
-                                Mariana chama Dominic e faz ele entregar um papel para Roy, neste papel tinha a seguinte
-                                missão: Achar 2 companheiros para uma aventura no Egito, achar o aventureiro proteger
-                                ele, e no final matar e pegar todo seu conhecimento.</p>
-                        </div>
+            </label>
+            <!-- POP UP 1 -->
+            <div class="popup-overlay" id="popupOverlay1">
+            <div class="popup-overlay-img"> <img src="src/img/dominic-removebg.png" alt="Dominic"></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">O Contrato da Noite</h1>
+                        <h2 class="popup-text__date">Data: 02/02/2024</h2>
+                        <p class="popup-text__summary-full">A sessão começou com Roy indo até um barbeiro para
+                            receber sua missão de Mercenário. Logo em seguida, Ruby vem para o Brasil para tratar de
+                            negócios, ampliar seus contratos, chegando ao Brasil ela foi até a boate Neffelins e
+                            conheceu Dominic. Dominic mora no Brasil, ele frequenta sempre a Neffelins, Mariana
+                            (Dona da Neffelins) Entrega uma missão para Dominic, a missão era de ficar de olho em
+                            Ruby, uma vampira promissora e muito perigosa, e descobrir se ela tinha algum contrato
+                            com a Mineradora. Roy chega até a Neffelins também, e acaba conhecendo Dominic e Ruby.
+                            Mariana chama Dominic e faz ele entregar um papel para Roy, neste papel tinha a seguinte
+                            missão: Achar 2 companheiros para uma aventura no Egito, achar o aventureiro proteger
+                            ele, e no final matar e pegar todo seu conhecimento.</p>
                     </div>
                 </div>
-            </label>
+            </div>
             <!-- FIM CARD1 -->
 
             <!-- CARD 2 -->
@@ -94,45 +99,46 @@
                     </div>
                 </div>
                 <button class="card__button" id="button2">Ver mais</button>
-                <!-- POP UP CARD 2 -->
-                <div class="popup-overlay" id="popupOverlay2">
-                    <img src="src/img/Roy-removebg.png" alt="Roy">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">Mistérios e Múmias</h1>
-                            <h2 class="popup-text__date">Data: 09/02/2024</h2>
-                            <p class="popup-text__summary-full">A sessão começou com Roy chegando ao Egito e alugando
-                                seu quarto e o de Dominic, após alugar o quarto Roy fez uns remédios e quando Dominic
-                                chegou os dois venderam alguns pela cidade, um tempo depois Ruby apareceu na cidade e
-                                eles foram encontrar o historiador para realizar o ataque a tumba. Roy ligou para seu
-                                contato e foram se encontrar com Thomas, um humano historiador que já havia ido em
-                                algumas tumbas já abertas anteriormente,mas essa era a sua primeira sem ser tocada.
-                                Dominic tentou desenrolar um Gip com uma mulher, mas falhou e Ruby assumiu e conseguiu o
-                                Gip com perfeição e Dominic dirigiu até a Tumba. Ao chegarem lá se depararam com a
-                                entrada, Dominic usou sua habilidade vampírica para pressentir perigo dentro da tumba, e
-                                sentiu alguém encarando ele lá de dentro e instintivamente sentiu medo. Após entrarem,
-                                eles continuaram caminhando por um labirinto que se repetia infinitamente. Eles tentaram
-                                resolver mas falharam, até que Roy percebeu que em um ponto específico tinha uma
-                                barreira que fazia você voltar do começo. Eles acharam letras X estranhas na parede, ao
-                                puxar tinha algo escrito em sangue. Dominic jogou seu sangue nelas e empurrou na parede
-                                novamente e a barreira sumiu. Mais à frente Ruby sentiu perigo e tirou Thomas da Tumba.
-                                Roy e Dominic continuaram e abriram uma porta, ao abrirem a porta apareceu 6 múmias
-                                atrás deles e à frente uma tumba com o que parece um caixão de um antigo vampiro. Roy
-                                atirou em algumas múmias e derrubou duas delas, Dominic abriu o caixão e ativou uma
-                                armadilha que fez o lugar todo começar a desmoronar, a cabeça da múmia tentou morder ele
-                                mas ele desviou, socou ela e a levou com ele. Roy após ver tudo caindo voltou para pegar
-                                alguns tesouros do local e seguiu fugindo, durante a fuga uma pedra apareceu e esmagou
-                                as pernas de Roy (falha bestial), Dominic derrubou sua caveira e voltou para ajudar Roy,
-                                eles saíram e viram Ruby com Thomas morto, sem sangue algum. Após isso, voltaram para a
-                                cidade.
+            </label>
+            <!-- POP UP CARD 2 -->
+            <div class="popup-overlay" id="popupOverlay2">
+                <div class="popup-overlay-img"> <img src="src/img/Roy-removebg.png" alt="Roy"></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose2">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">Mistérios e Múmias</h1>
+                        <h2 class="popup-text__date">Data: 09/02/2024</h2>
+                        <p class="popup-text__summary-full">A sessão começou com Roy chegando ao Egito e alugando
+                            seu quarto e o de Dominic, após alugar o quarto Roy fez uns remédios e quando Dominic
+                            chegou os dois venderam alguns pela cidade, um tempo depois Ruby apareceu na cidade e
+                            eles foram encontrar o historiador para realizar o ataque a tumba. Roy ligou para seu
+                            contato e foram se encontrar com Thomas, um humano historiador que já havia ido em
+                            algumas tumbas já abertas anteriormente,mas essa era a sua primeira sem ser tocada.
+                            Dominic tentou desenrolar um Gip com uma mulher, mas falhou e Ruby assumiu e conseguiu o
+                            Gip com perfeição e Dominic dirigiu até a Tumba. Ao chegarem lá se depararam com a
+                            entrada, Dominic usou sua habilidade vampírica para pressentir perigo dentro da tumba, e
+                            sentiu alguém encarando ele lá de dentro e instintivamente sentiu medo. Após entrarem,
+                            eles continuaram caminhando por um labirinto que se repetia infinitamente. Eles tentaram
+                            resolver mas falharam, até que Roy percebeu que em um ponto específico tinha uma
+                            barreira que fazia você voltar do começo. Eles acharam letras X estranhas na parede, ao
+                            puxar tinha algo escrito em sangue. Dominic jogou seu sangue nelas e empurrou na parede
+                            novamente e a barreira sumiu. Mais à frente Ruby sentiu perigo e tirou Thomas da Tumba.
+                            Roy e Dominic continuaram e abriram uma porta, ao abrirem a porta apareceu 6 múmias
+                            atrás deles e à frente uma tumba com o que parece um caixão de um antigo vampiro. Roy
+                            atirou em algumas múmias e derrubou duas delas, Dominic abriu o caixão e ativou uma
+                            armadilha que fez o lugar todo começar a desmoronar, a cabeça da múmia tentou morder ele
+                            mas ele desviou, socou ela e a levou com ele. Roy após ver tudo caindo voltou para pegar
+                            alguns tesouros do local e seguiu fugindo, durante a fuga uma pedra apareceu e esmagou
+                            as pernas de Roy (falha bestial), Dominic derrubou sua caveira e voltou para ajudar Roy,
+                            eles saíram e viram Ruby com Thomas morto, sem sangue algum. Após isso, voltaram para a
+                            cidade.
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
-            </label>
+            </div>
             <!-- FIM CARD 2 -->
+
             <!-- CARD 3 -->
             <input type="radio" name="slide" id="c3">
             <label for="c3" class="card">
@@ -144,38 +150,88 @@
                     </div>
                 </div>
                 <button class="card__button" id="button3">Ver mais</button>
-                <!-- POP UP CARD 3 -->
-                <div class="popup-overlay" id="popupOverlay3">
-                    <img src="src/img/Ruby-removebg.png" alt="Ruby">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">Segredos Revelados</h1>
-                            <h2 class="popup-text__date">Data: 23/02/2024</h2>
-                            <p class="popup-text__summary-full">
-                                No Egito...
-Ruby vai ao quarto em busca de Dominic, mas não a encontra lá. Aproveitando a oportunidade, ela segue para o quarto de Roy. Ao entrar, percebe imediatamente que Roy ainda não se recuperou completamente e está enfrentando problemas em uma de suas pernas. Mesmo quando Ruby oferece ajuda, Roy gentilmente recusa, embora admita que um apoiador seria benéfico. Decidida a ajudar, e não esquecendo de cobrar pela ajuda, Ruby se encaminha para a recepcionista a fim de procurar por algum tipo de apoio. Lá, é oferecida a ela uma bengala, que prontamente aceita em nome de Roy. Com a bengala em mãos, Ruby retorna ao quarto de Roy, em seguida, conversa com ele sobre as pesquisas que ele precisa entregar ao pessoal com quem negociou.
-No local designado, Ruby e Roy encontram um senhor idoso em uma loja de antiguidades, onde as pesquisas são entregues, porém, para surpresa deles, não há nenhuma forma de recompensa além das joias que Roy adquiriu durante a exploração nas ruinas do Egito. O que mais chama a atenção na loja além dos artigos antigos, são os rádios em exposição que emitem alguns ruídos estranhos e as sombras que se conectavam aos rádios e às tomadas na parede. De repente, um dos rádios começa a transmitir a voz de uma criatura misteriosa, que se apresenta de maneira sinistra e sombria, revelando suas intenções perturbadoras para o mundo. Diante dessa situação inquietante, Ruby e Roy decidem deixar rapidamente a loja de antiguidades.
+            </label>
+            <!-- POP UP CARD 3 -->
+            <div class="popup-overlay" id="popupOverlay3">
+                <div class="popup-overlay-img"> <img src="src/img/Ruby-removebg.png" alt="Ruby"></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose3">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">Segredos Revelados</h1>
+                        <h2 class="popup-text__date">Data: 23/02/2024</h2>
+                        <p class="popup-text__summary-full">
+                            No Egito...
+                            Ruby vai ao quarto em busca de Dominic, mas não a encontra lá. Aproveitando a
+                            oportunidade, ela segue para o quarto de Roy. Ao entrar, percebe imediatamente que Roy
+                            ainda não se recuperou completamente e está enfrentando problemas em uma de suas pernas.
+                            Mesmo quando Ruby oferece ajuda, Roy gentilmente recusa, embora admita que um apoiador
+                            seria benéfico. Decidida a ajudar, e não esquecendo de cobrar pela ajuda, Ruby se
+                            encaminha para a recepcionista a fim de procurar por algum tipo de apoio. Lá, é
+                            oferecida a ela uma bengala, que prontamente aceita em nome de Roy. Com a bengala em
+                            mãos, Ruby retorna ao quarto de Roy, em seguida, conversa com ele sobre as pesquisas que
+                            ele precisa entregar ao pessoal com quem negociou.
+                            No local designado, Ruby e Roy encontram um senhor idoso em uma loja de antiguidades,
+                            onde as pesquisas são entregues, porém, para surpresa deles, não há nenhuma forma de
+                            recompensa além das joias que Roy adquiriu durante a exploração nas ruinas do Egito. O
+                            que mais chama a atenção na loja além dos artigos antigos, são os rádios em exposição
+                            que emitem alguns ruídos estranhos e as sombras que se conectavam aos rádios e às
+                            tomadas na parede. De repente, um dos rádios começa a transmitir a voz de uma criatura
+                            misteriosa, que se apresenta de maneira sinistra e sombria, revelando suas intenções
+                            perturbadoras para o mundo. Diante dessa situação inquietante, Ruby e Roy decidem deixar
+                            rapidamente a loja de antiguidades.
 
-No retorno ao hotel, Roy decide demonstrar a Ruby como ele costuma se alimentar, mas seus esforços não resultam como esperado, levando-o a desistir e optar por comprar sua comida. Assim, Ruby se vê obrigada a voltar sozinha para o hotel. Ao chegar lá, encontra Dominic, que, como um gesto de desculpas, decide presenteá-la com uma faca no estilo baioneta.
+                            No retorno ao hotel, Roy decide demonstrar a Ruby como ele costuma se alimentar, mas
+                            seus esforços não resultam como esperado, levando-o a desistir e optar por comprar sua
+                            comida. Assim, Ruby se vê obrigada a voltar sozinha para o hotel. Ao chegar lá, encontra
+                            Dominic, que, como um gesto de desculpas, decide presenteá-la com uma faca no estilo
+                            baioneta.
 
-No quarto de Roy, Ruby tenta entrar em contato com alguns conhecidos na tentativa de vender as joias que Roy conseguiu encontrar, porém os resultados não são satisfatórios, resultando em ofertas abaixo do esperado. Diante dessa situação, ela decide tomar uma decisão: dividir igualmente as joias entre todos os envolvidos. Roy e Dominique escolhem os anéis como sua parte, enquanto Ruby fica com o colar. Mas logo em seguida, Ruby, Roy e Dominic são surpreendidos pela chegada inesperada de Ravenna, supostamente a namorada de Dominic. Ravenna se destaca pela sua personalidade forte e controladora, adicionando uma nova dinâmica ao grupo.
+                            No quarto de Roy, Ruby tenta entrar em contato com alguns conhecidos na tentativa de
+                            vender as joias que Roy conseguiu encontrar, porém os resultados não são satisfatórios,
+                            resultando em ofertas abaixo do esperado. Diante dessa situação, ela decide tomar uma
+                            decisão: dividir igualmente as joias entre todos os envolvidos. Roy e Dominique escolhem
+                            os anéis como sua parte, enquanto Ruby fica com o colar. Mas logo em seguida, Ruby, Roy
+                            e Dominic são surpreendidos pela chegada inesperada de Ravenna, supostamente a namorada
+                            de Dominic. Ravenna se destaca pela sua personalidade forte e controladora, adicionando
+                            uma nova dinâmica ao grupo.
 
-2 meses depois...
+                            2 meses depois...
 
-Com a missão concluída, cada um dos envolvidos decide retornar à sua rotina habitual. Ruby volta para o cuidado de seus bares, Dominic retoma seu posto no bar de Mariana e leva Ravenna consigo, enquanto Roy volta para seus negócios na farmácia. Durante esse período, que passou como um piscar de olhos, dois meses se passaram, marcando o fim dessa aventura conjunta e o retorno à vida cotidiana.
+                            Com a missão concluída, cada um dos envolvidos decide retornar à sua rotina habitual.
+                            Ruby volta para o cuidado de seus bares, Dominic retoma seu posto no bar de Mariana e
+                            leva Ravenna consigo, enquanto Roy volta para seus negócios na farmácia. Durante esse
+                            período, que passou como um piscar de olhos, dois meses se passaram, marcando o fim
+                            dessa aventura conjunta e o retorno à vida cotidiana.
 
-Ruby recebe uma ligação de alguém de grande importância em sua vida, que deseja discutir os eventos ocorridos durante a missão no Egito. Sem hesitar, Ruby responde de maneira franca e sincera, sem ocultar nenhum detalhe, reconhecendo a dignidade da pessoa do outro lado da linha e a importância de ser honesta. Curiosamente, tanto Roy quanto Dominic também são submetidos a interrogatórios similares por figuras igualmente importantes, todos interessados em esclarecer os eventos ocorridos durante a missão no Egito.
+                            Ruby recebe uma ligação de alguém de grande importância em sua vida, que deseja discutir
+                            os eventos ocorridos durante a missão no Egito. Sem hesitar, Ruby responde de maneira
+                            franca e sincera, sem ocultar nenhum detalhe, reconhecendo a dignidade da pessoa do
+                            outro lado da linha e a importância de ser honesta. Curiosamente, tanto Roy quanto
+                            Dominic também são submetidos a interrogatórios similares por figuras igualmente
+                            importantes, todos interessados em esclarecer os eventos ocorridos durante a missão no
+                            Egito.
 
-Na noite seguinte, Ruby subitamente se vê adormecendo e acordando em um ambiente envolto por sombras, que estranhamente têm um aspecto reconfortante para ela. No entanto, sua sensação de conforto é interrompida quando percebe a presença de outras pessoas ao seu redor. Num instante fugaz, Dominic surge à sua direita, claramente confuso quanto à sua presença ali, enquanto à esquerda está Roy, cuja expressão facial reflete a mesma perplexidade de Dominic.
+                            Na noite seguinte, Ruby subitamente se vê adormecendo e acordando em um ambiente envolto
+                            por sombras, que estranhamente têm um aspecto reconfortante para ela. No entanto, sua
+                            sensação de conforto é interrompida quando percebe a presença de outras pessoas ao seu
+                            redor. Num instante fugaz, Dominic surge à sua direita, claramente confuso quanto à sua
+                            presença ali, enquanto à esquerda está Roy, cuja expressão facial reflete a mesma
+                            perplexidade de Dominic.
 
-É revelado que o "Novo Governo" os convocou, aparentemente contra a vontade deles. Enquanto estão lá, são expostos a uma série de imagens horríveis projetadas em uma espécie de tela ou projetor. Essas imagens retratam atrocidades e mortes ocorridas em cidades próximas ao local da missão no Egito. É então que lhes é informado que a missão no Egito libertou uma antiga e malevolente entidade, uma ancila, que agora está espalhando caos e destruição pelo mundo. Cabe a eles, portanto, a responsabilidade de resolver esse terrível problema que eles inadvertidamente ajudaram a desencadear.
-                            </p>
-                        </div>
+                            É revelado que o "Novo Governo" os convocou, aparentemente contra a vontade deles.
+                            Enquanto estão lá, são expostos a uma série de imagens horríveis projetadas em uma
+                            espécie de tela ou projetor. Essas imagens retratam atrocidades e mortes ocorridas em
+                            cidades próximas ao local da missão no Egito. É então que lhes é informado que a missão
+                            no Egito libertou uma antiga e malevolente entidade, uma ancila, que agora está
+                            espalhando caos e destruição pelo mundo. Cabe a eles, portanto, a responsabilidade de
+                            resolver esse terrível problema que eles inadvertidamente ajudaram a desencadear.
+                        </p>
                     </div>
                 </div>
-            </label>
+            </div>
             <!-- FIM CARD 3 -->
+
+
             <!-- CARD 4 -->
             <input type="radio" name="slide" id="c4">
             <label for="c4" class="card">
@@ -188,27 +244,41 @@ Na noite seguinte, Ruby subitamente se vê adormecendo e acordando em um ambient
                     </div>
                 </div>
                 <button class="card__button" id="button4">Ver mais</button>
-                <!-- POP UP CARD 4 -->
-                <div class="popup-overlay" id="popupOverlay4">
-                    <img src="*" alt="">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">SEM NOME</h1>
-                            <h2 class="popup-text__date">SEM DATA</h2>
-                            <p class="popup-text__summary-full">
-Fenrir falava em sua casa com seus empregados Cristian e Grace sobre uma visita do Sebastian um “contato” do Fenrir, logo após os dois saíram e o Fenrir foi em uma sala secreta ver sua árvore genealógica, minutos depois Sebastian chega e fala que colocou ele em uma “missão” e que já estava tudo pago e garantido, era só ele ir aos Estados Unidos, Fenrir ameaça ele mas minutos depois vai para lá.
-Dominic conversava com sua “namorada” (sei lá acho que é isso) sobre também ir aos Estados Unidos a princípio encontrar o “grupo” para essa “missão” algumas DRs aconteceram mas ele tá vivo e partiu em direção aos Estados Unidos.
-Roy estava em sua “farmácia” fazendo drog- quer dizer remédios e recebeu a visita de alguém falando sobre a “missão” então lá foi ele como todo mundo para os Estados Unidos.
-Todos chegam lá eventualmente Roy, Fenrir, Dominic e Briar, eles chegaram um por um no bar da Ruby e foram trocando um papo e fazendo idiotices como quebrar uma taça e quase ser morto pela Ruby por conta disso (TMJ Roy) uma garota chamada Hera chega e passa as informações da “Missão” ir para o Egito em uma cidade e tentar encontrar uma garota que tinha as informações do objetivo principal da missão.
+            </label>
+            <!-- POP UP CARD 4 -->
+            <div class="popup-overlay" id="popupOverlay4">
+                <div class="popup-overlay-img"> <img src="*" alt=""></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose4">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">SEM NOME</h1>
+                        <h2 class="popup-text__date">SEM DATA</h2>
+                        <p class="popup-text__summary-full">
+                            Fenrir falava em sua casa com seus empregados Cristian e Grace sobre uma visita do
+                            Sebastian um “contato” do Fenrir, logo após os dois saíram e o Fenrir foi em uma sala
+                            secreta ver sua árvore genealógica, minutos depois Sebastian chega e fala que colocou
+                            ele em uma “missão” e que já estava tudo pago e garantido, era só ele ir aos Estados
+                            Unidos, Fenrir ameaça ele mas minutos depois vai para lá.
+                            Dominic conversava com sua “namorada” (sei lá acho que é isso) sobre também ir aos
+                            Estados Unidos a princípio encontrar o “grupo” para essa “missão” algumas DRs
+                            aconteceram mas ele tá vivo e partiu em direção aos Estados Unidos.
+                            Roy estava em sua “farmácia” fazendo drog- quer dizer remédios e recebeu a visita de
+                            alguém falando sobre a “missão” então lá foi ele como todo mundo para os Estados Unidos.
+                            Todos chegam lá eventualmente Roy, Fenrir, Dominic e Briar, eles chegaram um por um no
+                            bar da Ruby e foram trocando um papo e fazendo idiotices como quebrar uma taça e quase
+                            ser morto pela Ruby por conta disso (TMJ Roy) uma garota chamada Hera chega e passa as
+                            informações da “Missão” ir para o Egito em uma cidade e tentar encontrar uma garota que
+                            tinha as informações do objetivo principal da missão.
 
-Nota: Cheguei atrasado então perdi uma parte significativa, e meu TDA não ajudou muito então meio que tem detalhes que eu não consegui prestar atenção mas botei o que eu lembro.
-                            </p>
-                        </div>
+                            Nota: Cheguei atrasado então perdi uma parte significativa, e meu TDA não ajudou muito
+                            então meio que tem detalhes que eu não consegui prestar atenção mas botei o que eu
+                            lembro.
+                        </p>
                     </div>
                 </div>
-            </label>
+            </div>
             <!-- FIM CARD 4 -->
+
             <!-- CARD 5 -->
             <input type="radio" name="slide" id="c5">
             <label for="c5" class="card">
@@ -220,22 +290,30 @@ Nota: Cheguei atrasado então perdi uma parte significativa, e meu TDA não ajud
                     </div>
                 </div>
                 <button class="card__button" id="button5">Ver mais</button>
-                <!-- POP UP CARD 5 -->
-                <div class="popup-overlay" id="popupOverlay5">
-                    <img src="*" alt="">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">SEM NOME</h1>
-                            <h2 class="popup-text__date">SEM DATA</h2>
-                            <p class="popup-text__summary-full">
-                                A noite começou com uma aposta de queda de braço entre Dominique e o Fenrir, que terminou com o braço quebrado. O incidente desencadeou uma série de eventos, incluindo a cura pública do Fenrir, resultando em várias quebras de máscara. A dona do bar, Ruby, quase perdeu seu estabelecimento por conta disso. Briar surpreendeu a todos ao se transformar em um urso durante outra aposta de queda de braço, tumultuando o bar. Enquanto isso, Fenrir se alimentava discretamente no andar de baixo. Ruby interveio, encerrando a confusão, e Briar e Dominique se retiraram. Com planos de partida para o Egito, o grupo se prepara para sua próxima missão em terras distantes.
-                            </p>
-                        </div>
+            </label>
+            <!-- POP UP CARD 5 -->
+            <div class="popup-overlay" id="popupOverlay5">
+                <div class="popup-overlay-img"> <img src="*" alt=""></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose5">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">SEM NOME</h1>
+                        <h2 class="popup-text__date">SEM DATA</h2>
+                        <p class="popup-text__summary-full">
+                            A noite começou com uma aposta de queda de braço entre Dominique e o Fenrir, que
+                            terminou com o braço quebrado. O incidente desencadeou uma série de eventos, incluindo a
+                            cura pública do Fenrir, resultando em várias quebras de máscara. A dona do bar, Ruby,
+                            quase perdeu seu estabelecimento por conta disso. Briar surpreendeu a todos ao se
+                            transformar em um urso durante outra aposta de queda de braço, tumultuando o bar.
+                            Enquanto isso, Fenrir se alimentava discretamente no andar de baixo. Ruby interveio,
+                            encerrando a confusão, e Briar e Dominique se retiraram. Com planos de partida para o
+                            Egito, o grupo se prepara para sua próxima missão em terras distantes.
+                        </p>
                     </div>
                 </div>
-            </label>
+            </div>
             <!-- FIM NO CARD 5 -->
+
             <!-- CARD 6 -->
             <input type="radio" name="slide" id="c6">
             <label for="c6" class="card">
@@ -248,26 +326,35 @@ Nota: Cheguei atrasado então perdi uma parte significativa, e meu TDA não ajud
                     </div>
                 </div>
                 <button class="card__button" id="button6">Ver mais</button>
-                <!-- POP UP CARD 6 -->
-                <div class="popup-overlay" id="popupOverlay6">
-                    <img src="*" alt="">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">Revelações e Conspirações</h1>
-                            <h2 class="popup-text__date">SEM DATA</h2>
-                            <p class="popup-text__summary-full">
-                                Ruby e Hera conseguem um guia turístico e obtêm informações sobre os acontecimentos da cidade, além de conseguirem o contato de uma possível informante (Glove).
+            </label>
+            <!-- POP UP CARD 6 -->
+            <div class="popup-overlay" id="popupOverlay6">
+                <div class="popup-overlay-img"> <img src="*" alt=""></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose6">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">Revelações e Conspirações</h1>
+                        <h2 class="popup-text__date">SEM DATA</h2>
+                        <p class="popup-text__summary-full">
+                            Ruby e Hera conseguem um guia turístico e obtêm informações sobre os acontecimentos da
+                            cidade, além de conseguirem o contato de uma possível informante (Glove).
 
-                                Roy e Briar se preparam para uma missão no deserto, porém, devido a vários imprevistos, acabam cometendo um assassinato em uma locadora de carros e encobrem o crime com um incêndio. Saem para cumprir seus objetivos levando Altair consigo, sob ameaças de morte por causa da descoberta dos poderes dos dois.
-                                
-                                Dominic e Fenrir resolvem um problema com a recepcionista, devido a passagens antigas de Dominic na cidade. Após isso, vão até a área comercial da cidade e obtêm informações sobre o local onde aconteceu o primeiro incêndio. Fenrir tem uma premonição e vê Eliara se alimentando de vários corpos e recuperando seus poderes enquanto profere algo em um idioma antigo. Fenrir guarda suas palavras.
-                            </p>
-                        </div>
+                            Roy e Briar se preparam para uma missão no deserto, porém, devido a vários imprevistos,
+                            acabam cometendo um assassinato em uma locadora de carros e encobrem o crime com um
+                            incêndio. Saem para cumprir seus objetivos levando Altair consigo, sob ameaças de morte
+                            por causa da descoberta dos poderes dos dois.
+
+                            Dominic e Fenrir resolvem um problema com a recepcionista, devido a passagens antigas de
+                            Dominic na cidade. Após isso, vão até a área comercial da cidade e obtêm informações
+                            sobre o local onde aconteceu o primeiro incêndio. Fenrir tem uma premonição e vê Eliara
+                            se alimentando de vários corpos e recuperando seus poderes enquanto profere algo em um
+                            idioma antigo. Fenrir guarda suas palavras.
+                        </p>
                     </div>
                 </div>
-            </label>
+            </div>
             <!-- FIM DO CARD 6 -->
+
             <!-- CARD 7 -->
             <input type="radio" name="slide" id="c7">
             <label for="c7" class="card">
@@ -279,27 +366,45 @@ Nota: Cheguei atrasado então perdi uma parte significativa, e meu TDA não ajud
                     </div>
                 </div>
                 <button class="card__button" id="button7">Ver mais</button>
-                <!-- POP UP CARD 7 -->
-                <div class="popup-overlay" id="popupOverlay7">
-                    <img src="*" alt="">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">SEM NOME</h1>
-                            <h2 class="popup-text__date">03/05/2024</h2>
-                            <p class="popup-text__summary-full">
-                                No Egito...
-Ruby e Fenrir conversam até a chegada de Dominic, que informa que precisa resolver assuntos no Brasil e se despede. Depois que Dominic sai, Ruby e Fenrir conversam do lado de fora do bar, onde Fenrir mostra a Ruby uma madeira entalhada com símbolos e explica ter tido uma visão da Anciã falando uma língua antiga. Rubi sente um fervor em seu sangue, os olhos brilham, mas não consegue proferir as palavras corretas. Ela então decide buscar mais informações sobre a língua antiga, contatando Hera e seu mentor Demian.
+            </label>
+            <!-- POP UP CARD 7 -->
+            <div class="popup-overlay" id="popupOverlay7">
+                <div class="popup-overlay-img"> <img src="*" alt=""></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose7">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">SEM NOME</h1>
+                        <h2 class="popup-text__date">03/05/2024</h2>
+                        <p class="popup-text__summary-full">
+                            No Egito...
+                            Ruby e Fenrir conversam até a chegada de Dominic, que informa que precisa resolver
+                            assuntos no Brasil e se despede. Depois que Dominic sai, Ruby e Fenrir conversam do lado
+                            de fora do bar, onde Fenrir mostra a Ruby uma madeira entalhada com símbolos e explica
+                            ter tido uma visão da Anciã falando uma língua antiga. Rubi sente um fervor em seu
+                            sangue, os olhos brilham, mas não consegue proferir as palavras corretas. Ela então
+                            decide buscar mais informações sobre a língua antiga, contatando Hera e seu mentor
+                            Demian.
 
-Preocupados com Roy e Briar, Fenrir liga para eles e descobre que estão em apuros. Fenrir e Ruby se dirigem ao local e encontram Dominic indo para lá a pé. Chegando lá, veem bombeiros apagando um incêndio e a polícia investigando um possível atentado. Briar e Roy contam que foram vistos por uma moça e Altair Vixen estava presente no ocorrido, e que estão com medo de serem pegos. Rubi percebe que Altair Vixen, era o mesmo guia turístico, que esteve com ela, e que ele é essencial para resolver o problema. E dentro do carro o "convence a ajudar".
+                            Preocupados com Roy e Briar, Fenrir liga para eles e descobre que estão em apuros.
+                            Fenrir e Ruby se dirigem ao local e encontram Dominic indo para lá a pé. Chegando lá,
+                            veem bombeiros apagando um incêndio e a polícia investigando um possível atentado. Briar
+                            e Roy contam que foram vistos por uma moça e Altair Vixen estava presente no ocorrido, e
+                            que estão com medo de serem pegos. Rubi percebe que Altair Vixen, era o mesmo guia
+                            turístico, que esteve com ela, e que ele é essencial para resolver o problema. E dentro
+                            do carro o "convence a ajudar".
 
-Após resolver o problema, Rubi descobre através de uma moça chamada Glove que Kill Die tem um clube de luta clandestino, e decide ir até lá para obter informações. O grupo consegue entrar, mas Kill Die se recusa a fornecer informações, exceto quando o nome "Mussachi" é mencionado. Dominic faz um acordo para lutar com Kill Die e obter as informações em caso de vitória. Durante a luta, o grupo faz apostas e Dominic vence. Após a vitória de Dominic, o grupo planeja interrogar o perdedor.
-                            </p>
-                        </div>
+                            Após resolver o problema, Rubi descobre através de uma moça chamada Glove que Kill Die
+                            tem um clube de luta clandestino, e decide ir até lá para obter informações. O grupo
+                            consegue entrar, mas Kill Die se recusa a fornecer informações, exceto quando o nome
+                            "Mussachi" é mencionado. Dominic faz um acordo para lutar com Kill Die e obter as
+                            informações em caso de vitória. Durante a luta, o grupo faz apostas e Dominic vence.
+                            Após a vitória de Dominic, o grupo planeja interrogar o perdedor.
+                        </p>
                     </div>
                 </div>
-            </label>
+            </div>
             <!-- FIM CARD 7 -->
+
             <!-- CARD 8 -->
             <input type="radio" name="slide" id="c8">
             <label for="c8" class="card">
@@ -312,25 +417,30 @@ Após resolver o problema, Rubi descobre através de uma moça chamada Glove que
                     </div>
                 </div>
                 <button class="card__button" id="button8">Ver mais</button>
-                <!-- POP UP CARD 8 -->
-                <div class="popup-overlay" id="popupOverlay8">
-                    <img src="*" alt="">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">SEM NOME</h1>
-                            <h2 class="popup-text__date">Data: 18/05/2024</h2>
-                            <p class="popup-text__summary-full">
-                                A sessão começa com uma cena por fora, ocorre o término de uma votação de um possível novo membro do novo governo (voltando pra cena dos jogadores).
-                                Após a luta do dominik e um lutador, a gente interroga o lutador e ele vaza o celular de um político que tem ligação com a vampira japonesa.
-                                após isso Roy e Hera encontram um investigador da segunda divisão que estava fazendo perguntas a uns trabalhadores de um bar.
-                                na noite seguinte, ruby, roy e fenir foram ver uma loja de eletrônicos antigos seguir o rastro dos radios misteriosos e fenir viu uma visão do locutor do rádio...
-                            </p>
-                        </div>
+            </label>
+            <!-- POP UP CARD 8 -->
+            <div class="popup-overlay" id="popupOverlay8">
+                <div class="popup-overlay-img"> <img src="*" alt=""></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose8">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">SEM NOME</h1>
+                        <h2 class="popup-text__date">Data: 18/05/2024</h2>
+                        <p class="popup-text__summary-full">
+                            A sessão começa com uma cena por fora, ocorre o término de uma votação de um possível
+                            novo membro do novo governo (voltando pra cena dos jogadores).
+                            Após a luta do dominik e um lutador, a gente interroga o lutador e ele vaza o celular de
+                            um político que tem ligação com a vampira japonesa.
+                            após isso Roy e Hera encontram um investigador da segunda divisão que estava fazendo
+                            perguntas a uns trabalhadores de um bar.
+                            na noite seguinte, ruby, roy e fenir foram ver uma loja de eletrônicos antigos seguir o
+                            rastro dos radios misteriosos e fenir viu uma visão do locutor do rádio...
+                        </p>
                     </div>
                 </div>
-            </label>
-            <!-- FIM DO CARD -->
+            </div>
+            <!-- FIM DO CARD 8 -->
+
             <!-- CARD 9 -->
             <input type="radio" name="slide" id="c9">
             <label for="c9" class="card">
@@ -343,21 +453,22 @@ Após resolver o problema, Rubi descobre através de uma moça chamada Glove que
                     </div>
                 </div>
                 <button class="card__button" id="button9">Ver mais</button>
-                <!-- POP UP CARD 9 -->
-                <div class="popup-overlay" id="popupOverlay9">
-                    <img src="*" alt="">
-                    <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
-                        <div class="popup-text">
-                            <h1 class="popup-text__name">SEM NOME</h1>
-                            <h2 class="popup-text__date">Data: 26/05/2024</h2>
-                            <p class="popup-text__summary-full">
-                            </p>
-                        </div>
+            </label>
+            <!-- POP UP CARD 9 -->
+            <div class="popup-overlay" id="popupOverlay9">
+                <div class="popup-overlay-img"> <img src="*" alt=""></div>
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose9">&times;</span>
+                    <div class="popup-text">
+                        <h1 class="popup-text__name">SEM NOME</h1>
+                        <h2 class="popup-text__date">Data: 26/05/2024</h2>
+                        <p class="popup-text__summary-full">
+                        </p>
                     </div>
                 </div>
-            </label>
-            <!-- FIM DO CARD -->
+            </div>
+            <!-- FIM DO CARD 9-->
+
             <!-- CARD 10 -->
             <input type="radio" name="slide" id="c10">
             <label for="c10" class="card">
@@ -370,11 +481,12 @@ Após resolver o problema, Rubi descobre através de uma moça chamada Glove que
                     </div>
                 </div>
                 <button class="card__button" id="button10">Ver mais</button>
+            </label>
                 <!-- POP UP CARD 9 -->
                 <div class="popup-overlay" id="popupOverlay10">
-                    <img src="*" alt="">
+                    <div class="popup-overlay-img"> <img src="*" alt=""></div>
                     <div class="popup-content">
-                        <span class="popup-close" id="popupClose">&times;</span>
+                        <span class="popup-close" id="popupClose10">&times;</span>
                         <div class="popup-text">
                             <h1 class="popup-text__name">proxima sessão</h1>
                             <h2 class="popup-text__date">Data: XX/XX/XX</h2>
@@ -383,42 +495,45 @@ Após resolver o problema, Rubi descobre através de uma moça chamada Glove que
                         </div>
                     </div>
                 </div>
-            </label>
-            <!-- FIM DO CARD -->
+            <!-- FIM DO CARD 10 -->
         </div>
     </div>
-    </main>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".card__button");
-    const popups = document.querySelectorAll(".popup-overlay");
-
-    buttons.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            const currentPopup = popups[index];
-            
-            if (!currentPopup.classList.contains("active")) {
-                // Abre o pop-up correspondente apenas se não estiver ativo
-                currentPopup.classList.add("active");
-            }
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        // Seleciona todos os botões de "Ver mais" (assumindo que cada botão tem uma classe comum, por exemplo, 'card__button')
+        var buttons = document.querySelectorAll('.card__button');
+        // Seleciona todos os overlays de pop-up
+        var popups = document.querySelectorAll('.popup-overlay');
+        // Seleciona o elemento de fechar pop-up comum
+        var popupClose = document.getElementById('popupClose');
+    
+        // Adiciona um evento de clique para cada botão
+        buttons.forEach(function(button, index) {
+            button.addEventListener('click', function() {
+                // Mostra apenas o pop-up correspondente ao índice atual
+                popups[index].style.display = 'block';
+            });
         });
-    });
-
-    const closeButtons = document.querySelectorAll(".popup-close");
-
-    closeButtons.forEach(closeButton => {
-        closeButton.addEventListener("click", () => {
-            // Fecha o pop-up ao clicar no botão de fechar
-            closeButton.parentNode.parentNode.classList.remove("active");
+    
+        // Adiciona um evento de clique para fechar todos os pop-ups
+        popupClose.addEventListener('click', function() {
+            popups.forEach(function(popup) {
+                popup.style.display = 'none';
+            });
         });
+    
+        // Fecha o pop-up ao clicar fora dele
+        window.onclick = function(event) {
+            popups.forEach(function(popup) {
+                if (event.target == popup) {
+                    popup.style.display = 'none';
+                }
+            });
+        };
     });
-});
-
+    
 
     </script>
 
-
-    <script src="src/js/script.js"></script>
     <script src="src/js/scriptGlobal.js"></script>
 </body>
 

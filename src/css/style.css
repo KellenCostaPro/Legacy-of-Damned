@@ -1,4 +1,7 @@
 
+body{
+    overflow: hidden;
+}
 .home {
     position: relative; 
     display: flex;
