@@ -104,7 +104,7 @@
             <div class="popup-overlay" id="popupOverlay2">
                 <div class="popup-overlay-img"> <img src="src/img/Roy-removebg.png" alt="Roy"></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose2">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">Mistérios e Múmias</h1>
                         <h2 class="popup-text__date">Data: 09/02/2024</h2>
@@ -155,7 +155,7 @@
             <div class="popup-overlay" id="popupOverlay3">
                 <div class="popup-overlay-img"> <img src="src/img/Ruby-removebg.png" alt="Ruby"></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose3">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">Segredos Revelados</h1>
                         <h2 class="popup-text__date">Data: 23/02/2024</h2>
@@ -249,7 +249,7 @@
             <div class="popup-overlay" id="popupOverlay4">
                 <div class="popup-overlay-img"> <img src="*" alt=""></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose4">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">SEM NOME</h1>
                         <h2 class="popup-text__date">SEM DATA</h2>
@@ -295,7 +295,7 @@
             <div class="popup-overlay" id="popupOverlay5">
                 <div class="popup-overlay-img"> <img src="*" alt=""></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose5">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">SEM NOME</h1>
                         <h2 class="popup-text__date">SEM DATA</h2>
@@ -331,7 +331,7 @@
             <div class="popup-overlay" id="popupOverlay6">
                 <div class="popup-overlay-img"> <img src="*" alt=""></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose6">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">Revelações e Conspirações</h1>
                         <h2 class="popup-text__date">SEM DATA</h2>
@@ -371,7 +371,7 @@
             <div class="popup-overlay" id="popupOverlay7">
                 <div class="popup-overlay-img"> <img src="*" alt=""></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose7">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">SEM NOME</h1>
                         <h2 class="popup-text__date">03/05/2024</h2>
@@ -422,7 +422,7 @@
             <div class="popup-overlay" id="popupOverlay8">
                 <div class="popup-overlay-img"> <img src="*" alt=""></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose8">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">SEM NOME</h1>
                         <h2 class="popup-text__date">Data: 18/05/2024</h2>
@@ -458,7 +458,7 @@
             <div class="popup-overlay" id="popupOverlay9">
                 <div class="popup-overlay-img"> <img src="*" alt=""></div>
                 <div class="popup-content">
-                    <span class="popup-close" id="popupClose9">&times;</span>
+                    <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
                         <h1 class="popup-text__name">SEM NOME</h1>
                         <h2 class="popup-text__date">Data: 26/05/2024</h2>
@@ -486,7 +486,7 @@
                 <div class="popup-overlay" id="popupOverlay10">
                     <div class="popup-overlay-img"> <img src="*" alt=""></div>
                     <div class="popup-content">
-                        <span class="popup-close" id="popupClose10">&times;</span>
+                        <span class="popup-close" id="popupClose">&times;</span>
                         <div class="popup-text">
                             <h1 class="popup-text__name">proxima sessão</h1>
                             <h2 class="popup-text__date">Data: XX/XX/XX</h2>
@@ -498,39 +498,47 @@
             <!-- FIM DO CARD 10 -->
         </div>
     </div>
-    <script>document.addEventListener('DOMContentLoaded', function() {
-        // Seleciona todos os botões de "Ver mais" (assumindo que cada botão tem uma classe comum, por exemplo, 'card__button')
-        var buttons = document.querySelectorAll('.card__button');
-        // Seleciona todos os overlays de pop-up
-        var popups = document.querySelectorAll('.popup-overlay');
-        // Seleciona o elemento de fechar pop-up comum
-        var popupClose = document.getElementById('popupClose');
-    
-        // Adiciona um evento de clique para cada botão
-        buttons.forEach(function(button, index) {
-            button.addEventListener('click', function() {
-                // Mostra apenas o pop-up correspondente ao índice atual
-                popups[index].style.display = 'block';
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os botões de "Ver mais"
+    var buttons = document.querySelectorAll('.card__button');
+    // Seleciona todos os overlays de pop-up
+    var popups = document.querySelectorAll('.popup-overlay');
+    // Seleciona todos os botões de fechar pop-up
+    var popupCloses = document.querySelectorAll('.popup-close');
+
+    // Adiciona um evento de clique para cada botão
+    buttons.forEach(function(button, index) {
+        button.addEventListener('click', function() {
+            // Oculta todos os pop-ups primeiro
+            popups.forEach(function(popup) {
+                popup.style.display = 'none';
             });
+            // Mostra apenas o pop-up correspondente ao índice atual
+            popups[index].style.display = 'block';
         });
-    
-        // Adiciona um evento de clique para fechar todos os pop-ups
-        popupClose.addEventListener('click', function() {
+    });
+
+    // Adiciona um evento de clique para fechar todos os pop-ups
+    popupCloses.forEach(function(closeButton) {
+        closeButton.addEventListener('click', function() {
             popups.forEach(function(popup) {
                 popup.style.display = 'none';
             });
         });
-    
-        // Fecha o pop-up ao clicar fora dele
-        window.onclick = function(event) {
-            popups.forEach(function(popup) {
-                if (event.target == popup) {
-                    popup.style.display = 'none';
-                }
-            });
-        };
     });
-    
+
+    // Fecha o pop-up ao clicar fora dele
+    window.addEventListener('click', function(event) {
+        popups.forEach(function(popup) {
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
+    });
+});
+
 
     </script>
 
