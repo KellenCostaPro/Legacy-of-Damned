@@ -35,7 +35,7 @@ body::before {
 .content__title {
     font-size: 3rem;
     margin-bottom: 10px;
-    font-family: 'reed';
+    font-family: var(--font-cinzel-decorative);
     font-weight: 400;
     color: #800;
 }
@@ -255,21 +255,21 @@ input:checked+label .description {
 .popup-text__summary-full {
     padding: 15px;
     color: #f4eded;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-cinzel);
     font-size: 1.7rem;
     line-height: 1.5;
-    /* Aumentado o espaçamento entre linhas para melhor legibilidade */
     white-space: pre-line;
-    /* Mantido para respeitar quebras de linha */
 }
 
 .popup-text {
     color: #800;
+    font-family: var( --font-cinzel-decorative);
 }
 
 .popup-text__date {
     color: #b0b0ba;
     font-size: 18px;
+    font-family: var(--font-cinzel);
 }
 
 .card__button {

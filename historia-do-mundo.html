@@ -12,51 +12,34 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="logo">
-            <img src="src/img/logo_vampiro.png" alt="logo vampiro">
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html"><img src="src/img/logo_vampiro.png" alt="logo vampiro"></a>
         </div>
-        <nav class="desktop-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#personagens">Personagens</a>
-                    <div class="dropdown-content">
-                        <a href="#personagem1">Briar Thorne</a>
-                        <a href="#personagem2">Ruby Victoria</a>
-                        <a href="#personagem3">Roy Joubert</a>
-                        <a href="#personagem4">Fenrir </a>
-                        <a href="#personagem5">Dominic</a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item header__nav-item--dropdown">
+                    <a href="#personagens" class="header__nav-link">Personagens</a>
+                    <div class="header__dropdown-content">
+                        <a href="index.html#personagem1" class="header__dropdown-link">Briar Thorne</a>
+                        <a href="index.html#personagem2" class="header__dropdown-link">Ruby Victoria</a>
+                        <a href="index.html#personagem3" class="header__dropdown-link">Roy Joubert</a>
+                        <a href="index.html#personagem" class="header__dropdown-link">Fenrir</a>
+                        <a href="index.html#personagem" class="header__dropdown-link">Dominic</a>
                     </div>
                 </li>
-                <li><a href="sessoes.html">Sessões</a></li>
-                <li><a href="historia-do-mundo.html">História do mundo</a></li>
+                <li class="header__nav-item"><a href="sessoes.html" class="header__nav-link">Sessões</a></li>
+                <li class="header__nav-item"><a href="historia-do-mundo.html" class="header__nav-link">História do
+                        mundo</a></li>
             </ul>
         </nav>
 
-        <nav class="mobile-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#personagens">Personagens</a>
-                    <div class="dropdown-content">
-                        <a href="#personagem1">Briar Thorne</a>
-                        <a href="#personagem2">Ruby Victoria</a>
-                        <a href="#personagem3">Roy Joubert</a>
-                        <a href="#personagem4">Fenrir </a>
-                        <a href="#personagem5">Dominic</a>
-                    </div>
-                </li>
-                <li><a href="sessoes.html">Sessões</a></li>
-                <li><a href="historia-do-mundo.html">História do mundo</a></li>
-            </ul>
-        </nav>
-
-        <button class="nav-responsivo">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </button>
+        <div class="header__hamburger">
+            <div class="header__hamburger-line"></div>
+            <div class="header__hamburger-line"></div>
+            <div class="header__hamburger-line"></div>
+        </div>
     </header>
     <article class="timeline">
         <nav class="timeline__nav">
@@ -78,9 +61,9 @@
         
         <div class="timeline__section">
             <div class="column">
-                <div class="img-descricao">
+                <!-- <div class="img-descricao">
                     <img src="src/img/top-secret.png" alt="">
-                </div>
+                </div> -->
                 <div class="content">
                     <div class="title">
                         <h1>1939</h1>
@@ -106,7 +89,6 @@
             </div>
             <!-- Popup -->
             <div class="popup-overlay" id="popup-overlay1">
-                <img class="img-pop" src="src/img/vamp1.png" alt="">
                 <div class="popup-content">
                     <span class="popup-close" id="popupClose">&times;</span>
                     <div class="popup-text">
@@ -193,9 +175,9 @@
             </div>
             <div class="column">
                 <div class="content">
-                    <div class="img-descricao">
+                    <!-- <div class="img-descricao">
                         <img src="src/img/top-secret.png" alt="">
-                    </div>
+                    </div> -->
                     <div class="title">
                         <h1>1970</h1>
                         <h2>O inicio da segunda inquisição
@@ -264,9 +246,9 @@
                 </div>
             </div>
             <div class="column">
-                <div class="img-descricao">
+              <!--   <div class="img-descricao">
                     <img src="src/img/top-secret.png" alt="">
-                </div>
+                </div> -->
                 <div class="content">
                     <div class="title">
                         <h1>2000</h1>
@@ -332,9 +314,9 @@
                 </div>
             </div>
             <div class="column">
-                <div class="img-descricao">
+                <!-- <div class="img-descricao">
                     <img src="src/img/top-secret.png" alt="">
-                </div>
+                </div> -->
                 <div class="content">
                     <div class="title">
                         <h1>2010</h1>

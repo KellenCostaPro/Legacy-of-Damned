@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Reed';
-    src: local('Reed Medium'), local('Reed-Medium'),
-        url('ReedMedium.woff2') format('woff2'),
-        url('ReedMedium.woff') format('woff'),
-        url('ReedMedium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }

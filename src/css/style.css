@@ -34,43 +34,44 @@ main.home {
 }
 
 .home__content {
-    max-width: 800px;
+    max-width: 1000px;
+    max-height: 800px;
     text-align: center;
+    left:  50px;
     padding: 20px;
     border-radius: 10px;
     z-index: 1; 
 }
 
 .home__title {
-    font-family: "Reed";
+    font-family: var(--font-cinzel-decorative);
     font-weight: 500;
-    font-size: 6vh;
+    font-size: 5rem;
     color: #800;
-    margin-bottom: 3vh;
 }
 
 .home__story {
     color: #fff;
-    font-size: 2vh;
-    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    white-space: pre-line;
 }
 
 .home__button {
     background-color: #800;
-    padding: 10px 15px;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 20px;
     border-radius: 5px;
     margin-top: 25px;
     transition: background-color 0.3s ease;
 }
 
-.home__button-link {
-    color: #fff;
-    
-}
-
 .home__button:hover {
     background-color: #e63946;
 }
+
+
 /* Media Queries para Responsividade */
 @media (max-width: 1200px) {
     .home__title {
@@ -167,10 +168,10 @@ main.home {
 }
 .personagem {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    padding-left: 100px; 
 }
 #personagem1 {
     background-image: url(../img/perssonagem-1.png);
@@ -205,23 +206,25 @@ main.home {
     background: rgba(43, 41, 41, 0.1);
     max-width: 700px;
     text-align: center;
+    justify-content: center;
+    align-items: flex-start;
     padding: 15px;
     border-radius: 10px;
     
 }
 
 .personagem__name{
+    font-family: var(--font-cinzel-decorative);
+    font-weight: 500;
+    font-size: 5rem;
     color: #800;
-    font-size: 6vh;
-    font-family: "Reed";
-    font-weight: 400;
-    margin-bottom: 2vh;
-    text-align: center;
+    margin-bottom: 20px;
 }
 .personagem__story{
-    color: #f4eded;
-    font-size: 2vh;
-    font-weight: 400;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    white-space: pre-line;
 }
 
 
